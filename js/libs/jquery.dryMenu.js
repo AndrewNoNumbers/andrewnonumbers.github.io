@@ -20,14 +20,14 @@ $(window).bind('scroll resize', function() {
 
 jQuery(document).ready(function() {
 	
-	$("a.btn-lwork-go_to").click(function() {
+	/*$("a.btn-lwork-go_to").click(function() {
 		$('html, body').animate({scrollTop: $(this.hash).offset().top-offset}, 2000);
 		return false;
 	});
 	$(".header_pax a.logo").click(function() {
 		jQuery('html, body').animate({scrollTop: 0}, 2000);
 		return false;
-	});
+	});*/
 	
 	var offset = 70;
 	

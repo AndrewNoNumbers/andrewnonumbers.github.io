@@ -1,112 +1,40 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>ndrw.me</title>
+        <title>chenandrew</title>
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">       
         <meta name="description" content="">
-        <meta name="author" content="DryThemes">
+        <meta name="author" content="Andrew Chen">
         <meta charset="utf-8">
 
         <link rel="shortcut icon" href="images/favicon.png">
         <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
-        <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css">
+        <link type="text/css" rel="stylesheet" href="css/font-awesome.css">
         <link type="text/css" rel="stylesheet" href="css/prettyPhoto.css">
 
-        <!--[if lt IE 9]>
-            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
 
         <link type="text/css" rel="stylesheet" href="css/style.css">
         
         <script type="text/javascript" src="js/jquery-1.8.1.min.js"></script>
-        <script type="text/javascript" src="js/jquery.myHint.js"></script>
+        <script type="text/javascript" src="js/jquery.myHint.js" defer async></script>
         <script type="text/javascript" src="js/jquery.isotope.min.js"></script>
         <script type="text/javascript" src="js/libs/jquery.prettyphoto-3.1.5/jquery.prettyphoto.js"></script>
-        <script type="text/javascript" src="js/libs/modernizr-2.6.2/modernizr.min.js"></script>
-        <script type="text/javascript" src="js/libs/jquery.dryMenu/jquery.dryMenu.js"></script>
+        
 
     </head>
     
     <body>
-		<table class="doc-loader">
+
+		<!--<table class="doc-loader">
 			<tr>
 				<td>
-					<img src="images/loader.gif" alt="Loading..." />
+					<div class="lds-dual-ring"></div>
 				</td>
 			</tr>
-		</table>
+		</table>-->
 
-
-		<div id="nav_wrapper"><!--navigation wrapper-->	    	
-			<div id="md_nav" class="navbar navbar-default" role="navigation">
-				<div class="navbar-inner">
-					<div class="container menu_wrapper">
-						<div class="row">
-							<div class="col-md-offset-1 col-md-10">
-								<div class="navbar-header header_pax">
-									<a class="navbar-brand logo" href="#"></a>
-								</div>
-								<div class="toggle_menu_wrapper pull-right">
-									<ul class="toggle_menu">
-										<li class="toggle pull-right">
-											<span class="toggle_menu_bar"></span>
-											<span class="toggle_menu_bar"></span>
-											<span class="toggle_menu_bar"></span>
-										</li>
-									</ul>
-								</div>
-								<div class="collapse navbar-collapse">
-									<ul class="nav navbar-nav menu_ul pull-right">
-										<li class="active"><a href="#home">Home</a></li>
-										<li><a href="#services">Services</a></li>
-										<li><a href="#latest_work">Latest</a></li>
-										<li><a href="#about">About</a></li>
-										<li><a href="#portfolio">Portfolio</a></li>
-										<li><a href="#blog">Blog</a></li>
-										<li><a href="#contact">Contact</a></li>
-									</ul>
-								</div><!--/.nav-collapse -->
-							</div>
-						</div>
-					</div><!-- /.container -->
-				</div>
-			</div>
-				
-			<div id="md_nav_inverse" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-				<div class="navbar-inner">
-					<div class="container menu_wrapper">
-						<div class="row">
-							<div class="col-md-offset-1 col-md-10">
-								<div class="navbar-header header_pax">
-									<a class="navbar-brand logo" href="#"></a>
-								</div>
-								<div class="toggle_menu_wrapper pull-right">
-									<ul class="toggle_menu">
-										<li class="toggle pull-right">
-											<span class="toggle_menu_bar"></span>
-											<span class="toggle_menu_bar"></span>
-											<span class="toggle_menu_bar"></span>
-										</li>
-									</ul>
-								</div>
-								<div class="collapse navbar-collapse">
-									<ul class="nav navbar-nav menu_ul pull-right">
-										<li><a href="#home">Home</a></li>
-										<li><a href="#services">Services</a></li>
-										<li><a href="#latest_work">Latest</a></li>
-										<li><a href="#about">About</a></li>
-										<li><a href="#portfolio">Portfolio</a></li>
-										<li><a href="#blog">Blog</a></li>
-										<li><a href="#contact">Contact</a></li>
-									</ul>
-								</div><!--/.nav-collapse -->
-							</div>
-						</div>
-					</div><!-- /.container -->
-				</div>
-			</div>
 			
 			<div id="mobile-menu" class="navbar navbar-inverse navbar-fixed-top">
 				<div class="container">
@@ -124,13 +52,13 @@
 							</div>
 							<div class="collapse navbar-collapse">
 							  <ul class="nav navbar-nav">
-								<li class="active"><a href="#home">Home</a></li>
-								<li><a href="#services">Services</a></li>
-								<li><a href="#latest_work">Latest</a></li>
-								<li><a href="#about">About</a></li>
-								<li><a href="#portfolio">Portfolio</a></li>
-								<li><a href="#blog">Blog</a></li>
-								<li><a href="#contact">Contact</a></li>
+								<li class="active" id="home-anchor"><a href="#home">Home</a></li>
+								<li id="intro-anchor"><a href="#services">Introduction</a></li>
+								<!--<li><a href="#latest_work">Latest</a></li>-->
+								<!--<li><a href="#about">About</a></li>-->
+								<li id="portfolio-anchor"><a href="#portfolio">Portfolio</a></li>
+								<!--<li><a href="#blog">Blog</a></li>-->
+								<li id="contact-anchor"><a href="#contact">Contact</a></li>
 							  </ul>
 							</div><!--/.nav-collapse -->
 						</div>
@@ -142,508 +70,489 @@
 
 		<div id="wrapper"><!--main wrapper as required by Bootstrap-->
 			
+			<div id="andrew_nav">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-offset-1 col-md-10">
+							<div class="navbar-header header_pax">
+								<a class="logo" href="#"></a>
+							</div>
+							<div>
+								<ul class="nav navbar-nav pull-right">
+									<li class="active"><a href="#home">Home</a></li>
+									<li><a href="#about">About</a></li>
+									<!--<li><a href="#latest_work">Latest</a></li>-->
+									<!--<li><a href="#about">About</a></li>-->
+									<li><a href="#portfolio">Portfolio</a></li>
+									<!--<li><a href="#blog">Blog</a></li>-->
+									<li><a href="#contact">Contact</a></li>
+								</ul>
+							</div><!--/.nav-collapse -->
+						</div>
+					</div>
+				</div>
+			</div>
+
 			<section class="section" id="home">
 				<div class="container">
 					<div class="home home_bg_img">
 						<div class="row">
-							<div class="col-md-offset-1 col-md-7">
-								<h1>
-									Hi, I'm Andrew. I design products and think about technology. (read my good examples bios here)
-								</h1>
+							<div class="col-md-offset-1 col-md-10">
+								<h1>Andrew Chen</h1>
+								<h2>A user experience designer who likes to empower people with great design</h2>
+								<p>
 							</div>
-							<div class="col-md-offset-1 col-md-4 social_home">
+							<div class="col-md-offset-1 col-md-10 social_home">
 								<ul>
-									<li class="first"><a href="https://twitter.com/_ndrw" target="_blank" class="soc_small_twitter"></a></li>
-									<li><a href="#" target="_blank" class="soc_small_dribbble"></a></li>
-									<li class="last"><a href="http://instagram.com/andrewnonumbers" target="_blank" class="soc_small_insta"></a></li>
+									<li class="first mail-icon">
+										<script TYPE="text/javascript">
+										emailE=('hi@' + 'chenandrew.com')
+										document.write('<a href="mailto:' + emailE + '">' + '<span class="fa fa-envelope"></span>' + '</a>')
+										</script>
+									</li>	
+									<li class="twitter-icon"><a href="https://twitter.com/_ndrw" target="_blank"><span class="fa fa-twitter"></span></a></li>
+									<li class="last dribbble-icon"><a href="https://dribbble.com/ndrw" target="_blank"><span class="fa fa-dribbble"></span></a></li>
 								</ul>
 							</div>
+						</div>
+						<div class="row" id="point-down">
+							<a href="#services"><div class="col-md-offset-1 col-md-10">
+								<!--<p class="point-down-desc">See more</p>-->
+								<p class="emoji">👇</p>
+							</div>
+							</a>
 						</div>
 					</div><!-- /.home -->
 				</div><!-- /.container -->
 			</section><!-- /Home section -->
 			
-
-			<section class="section" id="services">
+			<div id="services-wrapper">
+			<section class="section" id="about">
 				<div class="container">
 					<div class="row bg_row">
-						<div class="row">
+						<div class="row" id="opening-row">
 							<div class="col-md-offset-1 col-md-10">
-								<h1>
-									I super awesome digital services using just pure lotve & passion
-								</h1>
-							</div>
-							<div class="col-md-offset-1 col-md-11">
-								<h3>
-									Step by step
-								</h3>
-							</div>
-							<div class="col-md-offset-1 col-md-5">
+								<h1 class="project_header">About</h1>
 								<p>
-									Nullam dictum felis eu pede mollis pretium es. Cras dapibus. Vivamus elementum se sem nisi. Aenean vulputate eleifend tellus
+									I currently study <a href="https://www.youtube.com/watch?v=XhJEJGXq8xs" id="design-anchor">Design</a> at UC Davis. I serve on the board of <a href="https://davisakpsi.com" id="akpsi-anchor">Alpha Kappa Psi</a>, a professional business fraternity, and <a href="https://www.facebook.com/pixelofdavis/">PIXEL</a>, the AIGA design club. In the past, I have worked on my own startup as well as companies like <a href="https://www.alation.com" id="resci-anchor">Alation</a>, <a href="https://timbuk2.com" id="timbuk2-anchor">Timbuk2</a>, <a href="https://airbnb.design" id="airbnb-anchor">Airbnb</a>, and <a href="https://www.retentionscience.com" id="resci-anchor">Retention Science</a>. <!--Some competitions I have won include IDEO JumpstART V, Science Hack Day Chicago, and IMSA PowerPitch.-->
 								</p>
-							</div>
-							<div class="col-md-5">
 								<p>
-									Lorem ipsum dictum felis eu pede mollis est pretium. Cras dapibus. Vivamus elementum semper nisi aenean vulputate eleifend
+									I am passionate about the role of design in business and the intersection of technology and society.
+									
+									In my spare time, I love reading the news, taking photos with my phone, and exploring nature. 🌲
+
 								</p>
-							</div>
-						</div><!-- /.row -->
-						<div class="row">
-							<!-- services_social -->
-							<div class="col-md-offset-1 col-md-10">
-								<ul class="services_social text-center">
-									<li class="first">
-										<img src="images/communication_icon.png" alt="icon"/>
-										<p>Blu</p>
-									</li>
-									<li class="services_separator">
-										<img src="images/services_separator.png" alt="___"/>
-									</li>
-									<li>
-										<img src="images/idea_icon.png" alt="icon"/>
-										<p>Blah</p>
-									</li>
-									<li class="services_separator">
-										<img src="images/services_separator.png" alt="___"/>
-									</li>
-									<li class="last">
-										<img src="images/delivery_icon.png" alt="icon"/>
-										<p>Bli</p>
-									</li>
-								</ul>
 							</div>
 						</div><!-- /.row -->
 					</div><!-- /.row bg_row -->
 				</div><!-- /.container -->
 			</section><!-- /Introduction section -->
+			</div>
 				
-			
-			<!--
-			<section class="section" id="latest_work">
-				<div class="container latest_work">
-					<div class="row bg_row">
-						<div class="row">
-							<div class="col-md-offset-1 col-md-10">
-								<h1>
-									Showcase of our latest work vivamus trekkies elementum cras semper tellus est
-								</h1>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-7 browser_img_frame">
-								<div class="latest_work_slide">
-									<ul>                            
-										<li>
-										   <img src="images/slider_img/latest_work_img_1.jpg" alt="First slide">
-										</li>
-										<li>
-											<img src="images/slider_img/latest_work_img_2.jpg" alt="Second slide">
-										</li>
-										<li>
-											<img src="images/slider_img/latest_work_img_3.jpg" alt="Third slide">
-										</li>
-									</ul>
-								</div>
-								<div class="pager_wrapper text-center">
-									<div class="pager"></div>
-								</div>
-							</div>
-							<div class="col-md-4">
-								<h3>Latest work</h3>
-								<p>
-									Nullam dictum felis eu pede mollis pretium. Cras dapibus. Vivamus elementum se semper nisi. 
-								</p>
-								<p class="m_top_30">
-									Aenean vulputate eleifend tellus Aliquam lorem ante, dapibus in se donec viverra quis feugiat a telus. Aliquam lorem. Lorem ante, dapibus in se donec viverra quis feugiat a telus. Aliquam lorem.
-								</p>
-							</div>
-							<div class="col-md-3 button_lwork">
-								<a href="#portfolio" class="btn btn-lg btn-lwork-go_to">Portfolio</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			-->
+			<div class="squiggly-divider"><img src="images/wiggles.png"></div>
 
-
-			<!--
-			<section class="section" id="about">
-				<div class="container about">
-					<div class="row bg_row">
-						<div class="row">
-							<div class="col-md-offset-1 col-md-10">
-								<h1>
-									Who we are? What we do? Meet our team. Lorem ipsum dolor nunc felis semper
-								</h1>
-							</div>
-							<div class="col-md-offset-1 col-md-11">
-								<h3>
-									About Us
-								</h3>
-							</div>
-							<div class="col-md-offset-1 col-md-6">
-								<p>
-									Nullam dictum felis eu pede mollis pretium. Cras deput dapibus per set. Vivamus elementum se semper nisi se. Aenean vulputate eleifend tellus.  Vivamus nellt nesste elementum se semper nisi nulla. Aenean este vulputat eleifend tellus.  Vivamus elementum se semperi
-								</p>
-							</div>
-						</div>
-						<div class="row personal_details m_top_50">
-							<div class="col-md-offset-1 col-md-2">
-								<img src="images/about_us_img.png" alt="About as img">
-							</div>
-							<div class="col-md-4">
-								<h3>
-									Peter Williams
-								</h3>
-								<p>web/graphic designer</p>
-							</div>
-						</div>
-						<div class="row personal_details m_top_30">
-							<div class="col-md-offset-1 col-md-2">
-								<img src="images/about_us_img.png" alt="About as img">
-							</div>
-							<div class="col-md-4">
-								<h3>
-									Monica Doe
-								</h3>
-								<p>developer</p>
-							</div>
-						</div>
-						<div class="row personal_details m_top_30 m_bottom_65">
-							<div class="col-md-offset-1 col-md-2">
-								<img src="images/about_us_img.png" alt="About as img">
-							</div>
-							<div class="col-md-4">
-								<h3>
-									Justin Smith
-								</h3>
-								<p>web/graphic designer</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			-->
-
-
-			<!--
-			<section class="section" id="testimonials">
-				<div class="container testimonials">
-					<div class="row bg_row">
-						<div class="row">
-							<div class="col-md-offset-1 col-md-10">
-								<h1>
-									Vivamus nellt nesste elementum se semper nisi nulla anean este vulput ater
-								</h1>
-							</div>
-						</div>
-						<div class="row testimonials_background">
-							<div class="col-md-offset-1 col-md-10">
-								<ul>                            
-									<li>
-										<h2>
-											The difference between a Designer and Developer, when it comes to design skills, is the difference between shooting a bullet and throwing it.
-										</h2>
-										<img src="images/profile_img.png" alt="Profile img">
-										<span>— SCOTT HANSELMAN	</span>
-									</li>
-									<li>
-										<h2>
-											Design is the contrast of the core of limitations therefore there are no boundaries. 
-											It is simply an interpretation of creativity. 
-										</h2>
-										<img src="images/profile_img.png" alt="Profile img">
-										<span>— JENAIHA WOODS</span>
-									</li>
-									<li>
-										<h2>
-											We work with individuals and businesses of all sizes 
-											to bring ideas to life through  awesome &amp; super-cool design solutions.
-										</h2>
-										<img src="images/profile_img.png" alt="Profile img">
-										<span>— SCOTT WOODS</span>
-									</li>
-								</ul>
-								<div class="pager"></div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			-->
-
-
-			<section class="section" id="portfolio">
+			<section class="section">
+				<div id="portfolio">
 				<div class="container portfolio">
 					<div class="row bg_row">
 						<div class="row">
 							<div class="col-md-offset-1 col-md-10">
-								<h1>
-									Check out a small selection of recent work.
-								</h1>
+								<!--<h3 class="portfolio_h1">
+									I've written about some of my past projects below.
+								</h3>-->
 							</div>
-						</div><!-- /.row -->
-						<div class="col-md-offset-1 col-md-10">                
+						</div>
+
+
+						<!--Alation Project-->
+						<!--<div id="case_0">
+						<div class="row">
+							<div class="col-md-offset-1 col-md-10 project_header">
+								<span>Redesign</span>
+							</div>
+						</div>
+						<a href="#services">
+							<div class="row project_row">
+								<div class="col-md-offset-1 col-md-10">
+									<div class="row case_title">
+										<h1>Redesigning search to give users just what they need</h1>
+									</div>
+									<hr>
+								</div>
+							</div>
+							<div class="row case_studies">
+								<div class="col-md-offset-1 col-md-4 case_description">
+									<div>
+										<p style="color:gray">Company</p>
+										<p>Alation</p>
+									</div>
+									<div>
+										<p style="color:gray">Time</p>
+										<p>June 2019 - September 2019</p>
+									</div>
+									<div>
+										<p style="color:gray">Project Overview</p>
+										<p>Redesigned search to increase user statisfaction (project ongoing, please contact me for more info)</p>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="ovelay_holder">
+										<img src="alation/Alation-Mockup.png" alt="portfolio_image_01" />
+									</div>
+								</div>
+							</div>
+						</a>
+						<div class="row case_studies">
+							<div class="col-md-offset-1 col-md-10">
+								<hr>
+							</div>
+						</div>
+						</div>-->
+
+
+						<!--ReSci Project-->
+						<div id="case_1">
+						<div class="row">
+							<div class="col-md-offset-1 col-md-10 project_header">
+								<span>Redesign</span>
+							</div>
+						</div>
+						<a href="resci.html">
+							<div class="row project_row">
+								<div class="col-md-offset-1 col-md-10">
+									<div class="row case_title">
+										<h1>Reducing redundant workload through a more efficient and more beautiful knowledge base</h1>
+									</div>
+									<hr>
+								</div>
+							</div>
+							<div class="row case_studies">
+								<div class="col-md-offset-1 col-md-6">
+									<div class="ovelay_holder">
+										<img src="resci/macbooks-1560-6-min.jpg" loading="lazy" alt="portfolio_image_01" />
+									</div>
+								</div>
+								<div class="col-md-4 case_description">
+									<div>
+										<p style="color:gray">Company</p>
+										<p>Retention Science</p>
+									</div>
+									<div>
+										<p style="color:gray">Time</p>
+										<p>June 2018 - July 2018</p>
+									</div>
+									<div>
+										<p style="color:gray">Project Overview</p>
+										<p>Was primary designer responsible for research, prototyping, and visual design that reduced redundant ticket load by 22%</p>
+									</div>
+								</div>
+							</div>
+						</a>
+						<div class="row case_studies">
+							<div class="col-md-offset-1 col-md-10">
+								<hr>
+							</div>
+						</div>
+						</div>
+
+
+						<!--Oil Selling Project-->
+						<div id="case_2">
+						<div class="row">
+							<div class="col-md-offset-1 col-md-10 project_header">
+								<span>New Product</span>
+							</div>
+						</div>
+						<a href="yc.html">
+							<div class="row project_row">
+								<div class="col-md-offset-1 col-md-10">
+									<div class="row case_title case_title_2">
+										<h1>Building an interactive prototype and video demo for a blockchain concept</h1>
+									</div>
+									<hr>
+								</div>
+							</div>
+							<div class="row case_studies">
+								<div class="col-md-offset-1 col-md-4 case_description">
+									<div>
+										<p style="color:gray">Company</p>
+										<p>Seed Stage Startup</p>
+									</div>
+									<div>
+										<p style="color:gray">Time</p>
+										<p>July 2017 - August 2017</p>
+									</div>
+									<div>
+										<p style="color:gray">Project Overview</p>
+										<p>Helped client understand needs and constraints, developed prototypes, and created high-fidelity visual designs and an interactive prototype</p>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="ovelay_holder">
+										<img src="oil-supply-chain/oil-selling-mockup-oct-27-min.jpg" loading="lazy" alt="portfolio_image_02" />
+									</div>
+								</div>
+							</div>
+						</a>
+						<div class="row case_studies">
+							<div class="col-md-offset-1 col-md-10">
+								<hr>
+							</div>
+						</div>
+						</div>
+
+						<!--Bruin Connections-->
+						<div id="case_3">
+						<div class="row">
+							<div class="col-md-offset-1 col-md-10 project_header">
+								<span>New Product</span>
+							</div>
+						</div>
+						<a href="bc.html">
+							<div class="row project_row">
+								<div class="col-md-offset-1 col-md-10">
+									<div class="row case_title case_title_3">
+										<h1>Creating a novel way to meet people at school</h1>
+									</div>
+									<hr>
+								</div>
+							</div>
+							<div class="row case_studies">
+								<div class="col-md-offset-1 col-md-6">
+									<div class="ovelay_holder">
+										<img src="bruin-connections/BC-Mockup-6-oct-27-min.jpg" loading="lazy" alt="portfolio_image_01" />
+									</div>
+								</div>
+								<div class="col-md-4 case_description">
+									<div>
+										<p style="color:gray">Company</p>
+										<p>UCLA DevX</p>
+									</div>
+									<div>
+										<p style="color:gray">Time</p>
+										<p>Aug 2016 - Feb 2017</p>
+									</div>
+									<div>
+										<p style="color:gray">Project Overview</p>
+										<p>Was principal designer responsible for research, prototyping, and high-fidelity visual design of product</p>
+									</div>
+								</div>
+							</div>
+						</a>
+						<div class="row case_studies">
+							<div class="col-md-offset-1 col-md-10">
+								<hr>
+							</div>
+						</div>
+						</div>
+
+
+
+						
+						<!--<div class="col-md-offset-1 col-md-10">                
 							<div class="row">
-								<ul id="filterOptions">
-									<li class="all current"><a href="#" data-filter="*">All</a></li>
-									<li><a href="#" data-filter=".photos">Mobile</a></li>
-									<li><a href="#" data-filter=".videos">Videos</a></li>
-									<li><a href="#" data-filter=".web">Web</a></li>
-									<li><a href="#" data-filter=".logos">Logos</a></li>
+								<ul id="filterOptions" class="flexnav">
+									<li class="all current flexnav-item"><a href="#" data-filter="*">All</a></li>
+									<li class="flexnav-item"><a href="#" data-filter=".ux">UI/UX</a></li>
+									<li class="flexnav-item"><a href="#" data-filter=".branding">Branding</a></li>
+									<li class="flexnav-item"><a href="#" data-filter=".packaging">Packaging</a></li>
+									<li class="flexnav-item"><a href="#" data-filter=".layout">Layout</a></li>
 								</ul>
-							</div><!-- /.row -->
+							</div>
+						</div>-->
+						<div class="row" id="other-work" style="padding: 0 0 10px 0;">
+							<div class="col-md-offset-1 col-md-10 project_header">
+								<span>Other Projects</span>
+							</div>
 						</div>
 						<div class="row">
 							<div class="col-md-offset-1 col-md-10">
 								<div class="gallery_wrapper">
 									<ul class="gallery_portfolio">
-										<li class="col-md-5 item photos first">
+										<a href="other/gradstreet-oct-28-big.png" data-rel="prettyPhoto[portfolio]"><li class="col-md-5 item branding">
 											<div class="ovelay_holder">
-												<img src="images/portfolio/thumbs/small_image_01.png" alt="portfolio_image_01" />
+												<img src="other/gradstreet-web-thumb2.png" loading="lazy" alt="Grad Street (2017)" />
 												<div class="item-overlay">
 													<div class="preview"></div>
 													<div class="item-overlay-text">
-														<a href="images/portfolio/originals/large_image_01.jpg" data-rel="prettyPhoto[portfolio]">airbnb</a>
+														Grad Street (2017)
+													</div>	
+												</div>
+											</div>
+											<p><strong>Grad Street</strong> - Branding & UI/UX</p>
+										</li></a>
+										<li class="col-md-5 item branding">
+											<div class="ovelay_holder">
+												<div class="video-mask">
+													<video preload="none" width="380" height="285" autoplay muted loop>
+														<source src="other/turo-demo-min.mp4" type="video/mp4">
+													</video>
+												</div>
+											</div>
+											<p><strong>Turo - Type in Motion Class</strong></p>
+										</li>
+										<li class="col-md-5 item branding">
+											<div class="ovelay_holder">
+												<div class="video-mask">
+													<video preload="none" width="380" height="285" autoplay muted loop>
+														<source src="other/nessy-animated-min.mp4" type="video/mp4">
+													</video>
+												</div>
+											</div>
+											<p><strong>Nessy Wine - Branding & Packaging, Type in Motion Class</strong></p>
+										</li>
+										<a href="other/hejia-oct-28-large.png" data-rel="prettyPhoto[portfolio]"><li class="col-md-5 item ux">
+											<div class="ovelay_holder">
+												<img src="other/hejia-mockup-thumbnail2.png" loading="lazy" alt="Hejia Mobile ERP (2013)" />
+												<div class="item-overlay">
+													<div class="preview"></div>
+													<div class="item-overlay-text">
+														Hejia Mobile ERP (2013)
 													</div>					
 												</div>
 											</div>
-											<p>Roles: Strategy, UI/UX, visualization</p>
-										</li>
-										<li class="col-md-5 item videos">
+											<p><strong>Hejia Software</strong> - UI/UX</p>
+										</li></a>
+										<!--<li class="col-md-5 item packaging first">
 											<div class="ovelay_holder">
-												<img src="images/portfolio/thumbs/small_image_02.png" alt="portfolio_image_02" />
-												<div class="item-overlay">
-													<div class="preview_video"></div>
-													<div class="item-overlay-text">
-														<a href="portfolio/Hejia-Composite.png" data-rel="prettyPhoto[portfolio]">HEJIA</a>
-													</div>
-												</div>
-											</div>
-											<p>Roles: UI</p>
-										</li>
-										<li class="col-md-5 item photos">
-											<div class="ovelay_holder">
-												<img src="images/portfolio/thumbs/small_image_03.png" alt="portfolio_image_03" />
+												<img src="other/nessy-wine-thumb2.png" alt="Package Branding Design" />
 												<div class="item-overlay">
 													<div class="preview"></div>
 													<div class="item-overlay-text">
-														<a href="images/portfolio/originals/large_image_03.jpg" data-rel="prettyPhoto[portfolio]">SwapBot</a>
-													</div>					
+														<a href="other/nessy-wine-thumb2.png" data-rel="prettyPhoto[portfolio]">Nessy Wines (2018)</a>
+													</div>	
 												</div>
 											</div>
-											<p>Roles: UX/UI lead</p>
-										</li>	
-										<li class="col-md-5 item videos">
+										</li>-->
+										<a href="other/akpsi-t-shirt-thumb.png" data-rel="prettyPhoto[portfolio]"><li class="col-md-5 item branding first">
 											<div class="ovelay_holder">
-												<img src="images/portfolio/thumbs/small_image_04.png" alt="portfolio_image_04" />
-												<div class="item-overlay">
-													<div class="preview_video"></div>
-													<div class="item-overlay-text">
-														<a href="https://www.youtube.com/watch?v=56HjNUwjL5Y" data-rel="prettyPhoto[portfolio]">Carnegie Mellon University</a>
-													</div>
-												</div>
-											</div>
-											<p>Roles: Everything</p>
-										</li>   
-										<li class=" col-md-5 item web">
-											<div class="ovelay_holder">
-												<img src="images/portfolio/thumbs/small_image_05.png" alt="portfolio_image_05" />
+												<img src="other/akpsi-t-shirt-thumb.png" loading="lazy" alt="Built Not Born (2019)" />
 												<div class="item-overlay">
 													<div class="preview"></div>
 													<div class="item-overlay-text">
-														<a href="images/portfolio/originals/large_image_05.jpg" data-rel="prettyPhoto[portfolio]">VW</a>
-													</div>					
+														Built Not Born (2019)
+													</div>	
 												</div>
 											</div>
-											<p>Roles: UI/UX, front-end</p>
-										</li>
-										<li class="col-md-5 item logos">
+											<p><strong>AK&Psi; Spring Rush</strong> - Branding & Marketing</p>
+										</li></a>
+										<a href="other/bumble-poster-thumbnail.png" data-rel="prettyPhoto[portfolio]"><li class="col-md-5 item first layout">
 											<div class="ovelay_holder">
-												<img src="images/portfolio/thumbs/small_image_06.png" alt="portfolio_image_06" />
+												<img src="other/bumble-poster-thumbnail.png" loading="lazy" alt="Bumble Poster (2018)" />
 												<div class="item-overlay">
 													<div class="preview"></div>
 													<div class="item-overlay-text">
-														<a href="images/portfolio/originals/large_image_06.jpg" data-rel="prettyPhoto[portfolio]">tosigram / TinyTerms</a>
-													</div>
+														Bumble Poster (2018)
+													</div>	
 												</div>
 											</div>
-											<p>Roles: Design lead</p>
-										</li>
+											<p><strong>Bumble Poster</strong> - Design Studio</p>
+										</li></a>
+										<a href="other/konjummies-oct-28-large.png" data-rel="prettyPhoto[portfolio]"><li class="col-md-5 item branding first">
+											<div class="ovelay_holder">
+												<img src="other/konjummies3.png" loading="lazy" alt="Konjummies (2019)" />
+												<div class="item-overlay">
+													<div class="preview"></div>
+													<div class="item-overlay-text">
+														Konjummies (2019)
+													</div>	
+												</div>
+											</div>
+											<p><strong>Konjummies</strong> - Branding & Packaging</p>
+										</li></a>
+										<!--<li class="col-md-5 item">
+											<div class="ovelay_holder">
+												<img src="other/flower-show-thumb.png" alt="Logo Design" />
+												<div class="item-overlay">
+													<div class="preview"></div>
+													<div class="item-overlay-text">
+														<a href="other/flower-show-thumb.png" data-rel="prettyPhoto[portfolio]">Philadelphia Flower Show (2017)</a>
+													</div>	
+												</div>
+											</div>
+										</li>-->
+										<a href="other/masters3.png" data-rel="prettyPhoto[portfolio]"><li class="col-md-5 item layout">
+											<div class="ovelay_holder">
+												<img src="other/masters3-oct-27-min.png" loading="lazy" alt="Magazine Spread on Masters (2018)" />
+												<div class="item-overlay">
+													<div class="preview"></div>
+													<div class="item-overlay-text">
+														Magazine Spread on Masters (2018)
+													</div>	
+												</div>
+											</div>
+											<p><strong>Magazine Spreads</strong> - Editorial Design</p>
+										</li></a>
+										<!--<li class="col-md-5 item layout">
+											<div class="ovelay_holder">
+												<img src="other/just-type-cards-didot.png" alt="Just Type Cards" />
+												<div class="item-overlay">
+													<div class="preview"></div>
+													<div class="item-overlay-text">
+														<a href="other/just-type-cards-didot.png" data-rel="prettyPhoto[portfolio]">Just Type Cards (2017)</a>
+													</div>	
+												</div>
+											</div>
+										</li>-->
 									 </ul>
 								</div><!-- /.gallery_wrapper -->
 							</div>
 						</div><!-- /.row -->
-						<div class="row">
+						<!--<div class="row">
 							<div class="col-md-offset-1 col-md-10">
 								<a href="/weeResume" class="btn btn-lg btn-lwork-go_to">Resume</a>
 							</div>
-						</div>
+						</div>-->
 					</div><!-- /.row bg_row -->
 				</div><!-- /.container -->
 			</section><!-- /Portfolio gallery section -->
 
-
-			<section class="section" id="blog">
-				<div class="container blog">
-					<div class="row bg_row">
-						<div class="row">
-							<div class="col-md-offset-1 col-md-10">
-								<h1>
-									Nesste elementum se semper nisi nulla anean este vulput ater vivamus nellt
-								</h1>
-							</div>
-						</div><!-- /.row -->
-						<div class="row">
-							<div class="col-md-offset-1 col-md-4">
-								<p class="blog_info">
-									Smart people learn from their mistakes. But the real sharp ones learn from the mistakes of others.
-								</p>
-								<p class="blog_personal_details">
-									— Brandon Mull
-								</p>
-							</div>
-							<div class="col-md-offset-1 col-md-5">
-								<ul class="blog_slide">                            
-									<li>
-										<h4 class="first_blog_slide">
-											May 26  - &nbsp;<i class="fa fa-comment-o"></i>&nbsp;   03  -  Web
-										</h4>
-										<p><i class="fa fa-caret-right"></i>&nbsp;&nbsp;<a href="single.html">Nullam dictum felis mollis pretium</a></p>
-										<h4>
-											May 19  - &nbsp;<i class="fa fa-comment-o"></i>&nbsp;   07  -  Photos
-										</h4>
-										<p><i class="fa fa-caret-right"></i>&nbsp;&nbsp;<a href="single.html">Ipsum dolor sit amet nec consectetuer</a></p>
-										<h4>
-											May 1  - &nbsp;<i class="fa fa-comment-o"></i>&nbsp;   13  -  Story
-										</h4>
-										<p><i class="fa fa-caret-right"></i>&nbsp;&nbsp;<a href="single.html">Aenemodo ligula eget dolorenean massa</a></p>
-										<h4>
-											May 1  - &nbsp;<i class="fa fa-comment-o"></i>&nbsp;   23  -  Listen
-										</h4>
-										<p><i class="fa fa-caret-right"></i>&nbsp;&nbsp;<a href="single.html">Vivamus elementum se sem nisi.</a></p>
-									</li>
-									<li>
-										<h4 class="first_blog_slide">
-											June 11  - &nbsp;<i class="fa fa-comment-o"></i>&nbsp;   03  -  Art
-										</h4>
-										<p><i class="fa fa-caret-right"></i>&nbsp;&nbsp;<a href="single.html">Aenemodo ligula eget dolorenean massa</a></p>
-										<h4>
-											June 1  - &nbsp;<i class="fa fa-comment-o"></i>&nbsp;   23  -  Logos
-										</h4>
-										<p><i class="fa fa-caret-right"></i>&nbsp;&nbsp;<a href="single.html">Nullam dictum felis eu pede mollis</a></p>
-										<h4>
-											June 19  - &nbsp;<i class="fa fa-comment-o"></i>&nbsp;   15  -  Photos
-										</h4>
-										<p><i class="fa fa-caret-right"></i>&nbsp;&nbsp;<a href="single.html">Aenean vulputate eleifend tellus</a></p>
-										<h4>
-											June 25  - &nbsp;<i class="fa fa-comment-o"></i>&nbsp;   30  -  Listen
-										</h4>
-										<p><i class="fa fa-caret-right"></i>&nbsp;&nbsp;<a href="single.html">Who we are? What we do? Meet us.</a></p>
-									</li>
-									<li>
-										<h4 class="first_blog_slide">
-											August 11  - &nbsp;<i class="fa fa-comment-o"></i>&nbsp;   23  -  Photos
-										</h4>
-										<p><i class="fa fa-caret-right"></i>&nbsp;&nbsp;<a href="single.html">Who we are? What we do? Meet our team.</a></p>
-										<h4>
-											August 1  - &nbsp;<i class="fa fa-comment-o"></i>&nbsp;   23  -  Listen
-										</h4>
-										<p><i class="fa fa-caret-right"></i>&nbsp;&nbsp;<a href="single.html">Lorem ipsum dolor nunc felis semper</a></p>
-										<h4>
-											August 15  - &nbsp;<i class="fa fa-comment-o"></i>&nbsp;   23  -  Listen
-										</h4>
-										<p><i class="fa fa-caret-right"></i>&nbsp;&nbsp;<a href="single.html">Aenemodo ligula eget dolorenean massa</a></p>
-										<h4>
-											August 22  - &nbsp;<i class="fa fa-comment-o"></i>&nbsp;   23  -  Art
-										</h4>
-										<p><i class="fa fa-caret-right"></i>&nbsp;&nbsp;<a href="single.html">Design is the contrast of the core of limitations</a></p>
-									</li>
-								</ul>
-								<div class="slide_prev_next">
-									<a id="blog-prev" class="prev" href="#"><i class="fa fa-caret-left"></i>&nbsp;previous</a>
-									<a id="blog-next" class="next" href="#">next&nbsp;<i class="fa fa-caret-right"></i></a>
-								</div>
-							</div>
-						</div><!-- /.row -->
-					</div><!-- /.row bg_row -->
-				</div><!-- /.container -->
-			</section><!-- /Blog links section -->
-
+			<!--<div class="squiggly-divider"><img src="images/wiggles.png"></div>-->
 
 			<section class="section" id="contact">
 				<div class="container contact_wrapper">
-					<div class="row bg_row">
+					<div class="row bg_row last_section">
 						<div class="row">
 							<div class="col-md-offset-1 col-md-10">
 								<h1>
-									Feel free to contact us. Please use our form below. Lorem ipsum dolor nunc felis semper
+									Status: Open to Internship and Full-Time 
 								</h1>
 							</div>
 						</div><!-- /.row -->
 						<div class="row">
 							<div class="col-md-offset-1 col-md-6">
 								<p class="m_bottom_30">
-									Nullam dictum felis eu pede mollis pretium. Cras deput dapibus per set. Vivamus elementum se semper nisi se. Aenean vulputate eleifend tellus. 
+									I am currently looking for an internship at a software company for the upcoming 2019-2020 school year.
 								</p>
-							</div>
-							<div class="col-md-4">
 								<p class="m_bottom_30">
-									Name of the street 123<br> 
-									Name of the City<br> 
-									Name of the Country
+									I believe I can add value to any business through my passion for design and user needs. While a big part of the design process is off the computer, I'm very familiar with tools including Adobe CC, Sketch, Figma as well as motion prototyping using After Effects and Principle. I have worked in organizations with established design systems as well as tiny startups where I'm the only designer. Whereever I am, I hope to be a strong team member and a facilitator of good design.
 								</p>
-							</div>
-						</div><!-- /.row -->
-						<div class="row">
-							<div class="col-md-offset-1 col-md-6">
-								<p>
-									Vivamus nellt nesste elementum se semper nisi nulla. Aenean este vulputat eleifend tellus.  Vivamus este elementum se semperi vivamus elementum se semperi elementum se semper nisi nulla. Aenean este vulputat. 
-								</p>
-							</div>
-
-							
-							<div class="col-md-4">
-								<span>
-									Phone: +000 123 456 7<br> 
-									Fax: +000 123 456 7<br> 
-									Email: johndoe@drythemes.com<br> 
-									Website: www.drythemes.com
+								<span> 
+									Andrew<br><br>
 								</span>
 							</div>
-						</div><!-- /.row -->
+							<div class="col-md-4">
+								<div class="contact-form">
+									<!--<input id="name" class="input-extra-large" type="text">
+									<input id="contact-email" class="input-extra-large" type="text">
+									<input id="city" class="input-extra-large" type="text">-->
+									<input id="subjectLine" class="input-extra-large" type="text">
+									<div>
+										<textarea id="message"></textarea>
+									</div>
+									<div class="text-right">
+										<span class="contact-info"></span>
+									</div>
+									<a id="send-button" href="mailto:andrewnonumbers+form@gmail.com" class="btn btn-large btn-subscribe">Email</a>
+								</div>
+							</div>
 
-						<!--contact form-->
-						<div class="row contact-form">
-							<div class="col-md-offset-1 col-md-6">
-								<!--<input id="name" class="input-extra-large" type="text">
-								<input id="contact-email" class="input-extra-large" type="text">
-								<input id="city" class="input-extra-large" type="text">-->
-								<input id="subjectLine" class="input-extra-large" type="text">
-							</div>
-							<div class="col-md-offset-1 col-md-6">
-								<div>
-									<textarea id="message"></textarea>
-								</div>
-								<div class="text-right">
-									<span class="contact-info"></span>
-								</div>
-							</div>
-							<div class="col-md-offset-4 col-md-4 text-center">
-								<a id="send-button" href="mailto:andrewnonumbers+form@gmail.com" class="btn btn-large btn-subscribe">Email</a>
-							</div>
 						</div>
+						
 						<!--<div class="row">
 							<div class="col-md-offset-1 col-md-10 map text-center"></div>
 						</div>-->
 
-						<div class="row">
-							<div class="col-md-12 text-center">
-								<p class="copyright">Design on.</p>
-							</div>
-						</div>
 					</div><!-- /.row bg_row -->
 				</div><!-- /.container -->    
 			</section><!-- /Contact form section -->
@@ -652,27 +561,40 @@
 			<footer>
 				<div class="container footer_wrapper">
 					<div class="row bg_row">
-						<!--<div class="row text-center social">
-							<ul>
+						<div class="row text-center social">
+							<!--<ul>
 								<li class="first"><a href="#" target="_blank" class="soc_large_twitter"></a></li>
 								<li class="separator">                               
-									<img src="images/separator-long.png" alt="__"/>
+									<img src="images/separator-long.png" alt="___">
 								</li>
 								<li><a href="#" target="_blank" class="soc_large_pinterest"></a></li>
 								<li class="separator">                                
-									<img  src="images/separator-long.png" alt="--"/>
+									<img  src="images/separator-long.png" alt="___">
 								</li>
 								<li class="last"><a href="#" target="_blank" class="soc_large_facebook"></a></li>
-							</ul>
+							</ul>-->
 						</div>
 						<div class="row">
 							<div class="col-md-12 text-center">
-								<p class="copyright">
-									ndrw.me - Built with love and passion
+								<p class="copyright social_row">
+									<span class="mail-icon">
+										<SCRIPT TYPE="text/javascript">
+										emailE=('hi@' + 'chenandrew.com')
+										document.write('<a href="mailto:' + emailE + '">' + '<span class="fa fa-envelope"></span>' + '</a>')
+										</script>
+									</span>
+									<span class="twitter-icon"><a href="https://twitter.com/_ndrw" target="_blank"><span class="fa fa-twitter"></span></a></span>
+									<span class="dribbble-icon"><a href="https://dribbble.com/ndrw" target="_blank"><span class="fa fa-dribbble"></span></a></span>
+
 								</p>
+								<p class="copyright">
+									reach out.
+								</p>
+								<p class="signoff">design and development by Andrew Chen</p>
+								<p class="signoff2">&copy;2019</p>
 							</div>
-						</div>
-					</div>
+						</div><!-- /.row -->
+					</div><!-- /.row bg_row -->
 				</div><!-- /.container -->
 			</footer>
 
@@ -680,6 +602,13 @@
 
 
     	<!-- Scripts -->
+    	<!--<script type="text/javascript" src="js/libs/modernizr-2.6.2/modernizr.min.js" defer></script>-->
+        <script type="text/javascript" src="js/libs/jquery.dryMenu/jquery.dryMenu.js" defer></script>
+        <script src="js/gumshoe.js"></script>
+
+    	<script>
+			var spy = new Gumshoe('#andrew_nav a');
+		</script>
 		<script type="text/javascript" src="js/libs/jquery-easing-1.3/jquery.easing.min.js"></script>
         <script type="text/javascript" src="js/libs/jquery-caroufredsel-6.2.1/jquery.caroufredsel-6.2.1-packed.js"></script>
         <script type="text/javascript" src="js/libs/jquery-mousewheel-1.0/jquery.mousewheel.min.js"></script>
@@ -690,6 +619,7 @@
         <!-- Main -->
         <script type="text/javascript" src="js/main.js"></script>
 
+       
 
     </body>
 </html>

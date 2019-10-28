@@ -24,13 +24,14 @@ jQuery(document).ready(function() {
 		$('html, body').animate({scrollTop: $(this.hash).offset().top-offset}, 2000);
 		return false;
 	});
-	$(".header_pax a.logo").click(function() {
+	/*$(".header_pax a.logo").click(function() {
 		jQuery('html, body').animate({scrollTop: 0}, 2000);
 		return false;
-	});
+	});*/
 	
 	var offset = 70;
 	
+	/*
 	$('#md_nav ul.nav li a, #md_nav_inverse ul.nav li a').click(function() {
 		
 		var item_href = ($(this).attr('href'));
@@ -45,7 +46,7 @@ jQuery(document).ready(function() {
 		}
 		
 	});
-	var offset1 = 50;
+	var offset1 = 50;*/
 
 	$('#mobile-menu ul.nav li a').click(function() {
 		
