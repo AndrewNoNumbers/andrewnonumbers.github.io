@@ -302,7 +302,13 @@ a:hover {
 	line-height: 0.05rem;
 	border-bottom: 1px dotted gray;
 	color: #202020;
-
+}
+.case_description div {
+	padding: 0.2rem 0 0.8rem 0;
+}
+.case_description div p:nth-child(1) {
+	font-size: 1.2rem;
+	font-weight: 700;
 }
 .case_description h4 span { /*basically the label*/
 	background-color: #fff;
@@ -312,9 +318,8 @@ a:hover {
 	text-decoration: underline;
 }
 .case_description p { /*basically the value*/
-	font-size: 2.1rem;
+	font-size: 1.8rem;
 	margin-bottom: 0;
-	font-weight: 700;
 	line-height: 2.4rem;
 	font-weight: 400;
 }
