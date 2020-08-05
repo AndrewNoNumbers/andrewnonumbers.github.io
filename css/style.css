@@ -249,7 +249,15 @@ a:hover {
 		margin-top: 9px;
 		/*font-family: 'Poppins';*/
 		text-align: left;
-		font-weight: 700;
+		font-weight: 600;
+	}
+	.portfolio .case_title_2 h1 {
+		font-size: 2rem;
+		margin-top: 0;
+	}
+	.portfolio .case_title_3 h1 {
+		font-size: 1.4rem;
+		margin-top: 0;
 	}
 }
 .case_studies img {
