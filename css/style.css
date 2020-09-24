@@ -5,7 +5,9 @@
 @import url('https://fonts.googleapis.com/css?family=Arimo');
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
 @import url('https://fonts.googleapis.com/css?family=Libre+Franklin');*/
-/*@import url('https://fonts.googleapis.com/css?family=Gentium+Book+Basic');*/
+
+@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+@import url('https://fonts.googleapis.com/css?family=Manrope');
 
 /*serif headings*/
 /*@import url('https://fonts.googleapis.com/css?family=PT+Serif'); /*good*/
@@ -24,13 +26,17 @@
 /*@import url('https://fonts.googleapis.com/css?family=Unica+One');
 @import url('https://fonts.googleapis.com/css?family=Reenie+Beanie'); /*bc*/
 /*@import url('https://fonts.googleapis.com/css?family=Michroma'); /*resci*/
+@import url('https://fonts.googleapis.com/css?family=Michroma');
 
 /*@import url('https://fonts.googleapis.com/css?family=Yeseva+One');
 @import url('https://fonts.googleapis.com/css?family=Arima+Madurai');
 @import url('https://fonts.googleapis.com/css?family=Fahkwang'); /*good for all*/
 /*@import url('https://fonts.googleapis.com/css?family=Trirong');*/
+@import url('https://fonts.googleapis.com/css?family=Arima+Madurai');
+@import url('https://fonts.googleapis.com/css?family=Fahkwang');
+@import url('https://fonts.googleapis.com/css?family=Trirong');
 
-@import url('https://fonts.googleapis.com/css?family=Bangers');/*
+@import url('https://fonts.googleapis.com/css?family=Rubik+Mono+One');/*
 @import url('https://fonts.googleapis.com/css?family=Rubik+Mono+One');
 @import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC');
 @import url('https://fonts.googleapis.com/css?family=Fondamento');*/
@@ -70,6 +76,10 @@ html {
 	color: #003DDB;
 	font-weight: 700;
 }
+#curology-anchor:hover {
+	color: #5445A9;
+	font-weight: 700;
+}
 #timbuk2-anchor:hover {
 	color: #23D7FF;
 	font-weight: 700;
@@ -92,10 +102,13 @@ html {
 }
 
 .mail-icon a:hover {
-	color: #fff;
+	color: #377EE8;
 }
 .twitter-icon a:hover {
 	color: #38A1F3;
+}
+.linkedin-icon a:hover {
+	color: #0e76a8;
 }
 .dribbble-icon a:hover {
 	color: #ea4c89;
@@ -128,14 +141,14 @@ a:hover {
 	transition: 0.3s;
 }
 #opening-row {
-	padding: 0 0 94px 0;
+	padding: 0 0 0px 0;
 	width:100%;
 	/*background: transparent url(../images/geometric.png) scroll 0 0 no-repeat;*/
 	/*background-image: linear-gradient(45deg, orange, red);
 	background-image: linear-gradient(30deg, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%);*/
-	animation: colorchange 10s infinite;
-	color: rgba(255,255,255,0.75);
-	font-family: 'avenir', Baskerville, sans-serif;
+	/*animation: colorchange 10s infinite;*/
+	color: rgba(0,0,0,1);
+	font-family: 'Avenir', Baskerville, sans-serif;
 	text-align: left;
 }
 @keyframes colorchange {
@@ -190,7 +203,7 @@ a:hover {
 	background-color: #F1C40F;
 	padding: 80px 0;
 	color: rgba(255,255,255,0.75);
-	font-family: 'avenir', Baskerville, sans-serif;
+	font-family: 'Avenir', Baskerville, sans-serif;
 }
 #second-row img {
 	max-height: 68px;
@@ -206,8 +219,11 @@ a:hover {
 	padding: 60px 0;
 }
 .case_studies a {
-	display: block;
-	margin-bottom: 8rem;
+	/*display: block;*/
+	margin-bottom: 2rem;
+}
+.case_studies img{
+	vertical-align: super;
 }
 .case_studies p {
 	/*font-size: 1.4rem;*/
@@ -220,8 +236,8 @@ a:hover {
 	text-transform: uppercase;
 	font-family: 'Avenir', Helvetica, sans-serif;
 	text-align: left;
-	transform: translateX(0.34rem);
-	margin-top: 50px;
+	transform: translateX(0.13rem);
+	/*margin-top: 50px;*/
 }
 .project_row hr {
 	width: 1vw;
@@ -249,7 +265,6 @@ a:hover {
 		margin-top: 9px;
 		/*font-family: 'Poppins';*/
 		text-align: left;
-		font-weight: 600;
 	}
 	.portfolio .case_title_2 h1 {
 		font-size: 2rem;
@@ -280,6 +295,8 @@ a:hover {
 #case_0 {
 	margin-top: 4rem;
 }
+
+
 .portfolio #case_0 a {
 	color: rgba(230,126,34,1);
 }
@@ -287,23 +304,41 @@ a:hover {
 	color: rgba(230,126,34,0.6);
 }
 .portfolio #case_1 a {
-	color: rgba(230,126,34,1);
+	color: rgba(93,93,93,1);
 }
 .portfolio #case_1 a:hover {
-	color: rgba(230,126,34,0.6);
+	color: rgba(93,93,93,0.6);
 }
 .portfolio #case_2 a {
-	color: rgba(52,73,94,1);
+	color: rgba(243,109,8,1);
 }
 .portfolio #case_2 a:hover {
-	color: rgba(52,73,94,0.6);
+	color: rgba(243,109,8,0.6);
 }
 .portfolio #case_3 a {
-	color: rgba(155,89,182,1);
+	color: rgba(51,46,84,1);
 }
 .portfolio #case_3 a:hover {
-	color: rgba(155,89,182,0.6);
+	color: rgba(51,46,84,0.6);
 }
+/*
+.case {
+	transition: transform 0.5s ease-in-out;
+}
+.case:hover {
+	transform: scale(1.04,1.04);
+}
+
+#case_3 {
+	transition: transform 0.5s ease-in-out;
+}
+#case_3:hover {
+	transform: scale(1.02,1.02);
+}
+*/
+
+
+
 
 .case_description h4 { /*hack that allows a line in the vertical middle of the text, not used rn*/
 	font-size: 0.9rem;
@@ -336,6 +371,8 @@ a:hover {
 /*for border radius of overall page*/
 .first_section {
 	border-radius: 10px 10px 0 0;
+
+	margin-top: 12vh;
 }
 .first_section>img {
 	border-radius: 10px 10px 0 0;
@@ -375,8 +412,8 @@ a:hover {
 /* general styling */
 body
 {
-	background-color: #1F2022;
-	font-family: 'avenir',sans-serif,Arial;
+	background-color: #fff;
+	font-family: 'Avenir',sans-serif,Arial;
 	font-weight: normal;
 	font-size: 15px;
 	line-height: 30px;
@@ -404,19 +441,26 @@ body
 	}
 }*/
 .bg_row {
-	box-shadow: 0px 1px 80px 0px rgba(0,0,0,0.6);
+	box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.3);
+
 }
 /*#services, #portfolio, #contact {
 	margin-bottom: 20vh;
 }*/
 footer {
-	margin-top: 18vh;
+	/*margin-top: 18vh;*/
 }
 
 
 
 img {
 	max-width: 100%;
+}
+figcaption {
+	font-size: 1.2rem;
+	font-style: italic;
+	padding-top: 0rem;
+	padding-bottom: 2rem;
 }
 #wrapper
 {
@@ -444,27 +488,27 @@ ul, ol
 }
 h1
 {
-	font: 300 38px/1.32em 'avenir',sans-serif,Arial;
+	font: 300 38px/1.32em 'Avenir',sans-serif,Arial;
 	letter-spacing: -0.02em;
 }
 h2
 {
-	font: 300 30px/1.33em 'avenir',sans-serif,Arial;
+	font: 300 30px/1.33em 'Avenir',sans-serif,Arial;
 	letter-spacing: -0.02em;
 }
 h3
 {
-	font: bold 22px/1.59em 'avenir',sans-serif,Arial;
+	font: bold 22px/1.59em 'Avenir',sans-serif,Arial;
 	letter-spacing: -0.02em;
 }
 h4
 {
-	font: 300 18px/1.67em 'avenir',sans-serif,Arial;
+	font: 300 18px/1.67em 'Avenir',sans-serif,Arial;
 	letter-spacing: -0.02em;
 }
 h5
 {
-	font: 24px/1.67em 'avenir',sans-serif,Arial;
+	font: 24px/1.67em 'Avenir',sans-serif,Arial;
 	letter-spacing: -0.02em;
 }
 a:visited, 
@@ -518,10 +562,13 @@ a:hover
 }
 /* menu */
 #andrew_nav {
-	margin-top: 8rem;
+	margin-top: 0rem;
 	z-index: 999;
 	position: sticky;
-	top: 1rem;
+	top: 0rem;
+}
+#andrew_nav .navbar-header {
+	color: gray;
 }
 #andrew_nav .nav li a {
 	color: white;
@@ -535,11 +582,14 @@ a:hover
 	background: none;
 	transition: color 0.2s ease;
 }
-#andrew_nav .nav {
-	background-color: rgba(0,0,0,0.8);
+/*#andrew_nav .nav {
+	background-color: rgba(0,0,0,1);
 	border-radius: 40px;
 	padding: 0 2rem;
-	/*border: 2px solid white;*/
+}*/
+
+#andrew_nav {
+	background-color: rgba(0,0,0,1);
 }
 
 ul.nav
@@ -640,7 +690,7 @@ ul.menu_ul a
 	display: inline-block;
 	width: 36px;
 	height: 36px;
-	padding-top: 7px;
+	margin-top: 7px;
 	background-image: url(../images/My-Face-Sticker.png);
 	background-repeat: no-repeat;
 	background-size: 28px, 36px;
@@ -667,12 +717,7 @@ ul.menu_ul a
 	color: #fff;
 	text-align: center;
 }
-#home h2 {
-	text-align: left;
-	font-size: 32px;
-	font-weight: 400;
-	margin-bottom: 12vh;
-}
+
 @keyframes appear {
 	0% {
 		transform: translateY(4vh);
@@ -706,18 +751,40 @@ ul.menu_ul a
 }
 #home h1
 {
-	margin-top: 130px;
 	/*font-size: 40px;*/
+
+	/*font-family: 'Helvetica';*/
+	font-weight: 600;
+	/*text-transform: uppercase;*/
+	font-size: 3.4rem;
+	line-height: 3.2rem;
+	animation: appear 0.8s;
+
+	margin-left: -.3rem;
+}
+#home p {
+
+	font-size: 1.8rem;
+	line-height: 4rem;
+	margin-top: 2vh;
+}
+#home .type-block {
+	padding: 18vh 0 9vh 0;
 
 	text-align: left;
 
-	animation: appear 0.8s;
-	font-family: Bangers;
-	letter-spacing: 0.15rem;
-	font-size: 7.4rem;
-	line-height: 7.2rem;
+	color: #000;
+
 }
-	/* home social */
+#home h2 {
+	text-transform: uppercase;
+	letter-spacing: 0.3rem;
+	font-size: 1rem;
+	animation: appear 0.8s;
+	font-weight: 600;
+	
+}
+/* home social */
 .social_home
 {
 	padding-top: 3vh;
@@ -778,8 +845,7 @@ a.soc_small_insta {background: transparent url('../images/social_small_insta.png
 
 
 #point-down {
-	margin-bottom: 20vh;
-	font-s
+	margin-bottom: 6vh;
 }
 #point-down a {
 	color: white;
@@ -828,6 +894,8 @@ a.soc_small_insta {background: transparent url('../images/social_small_insta.png
 {
 	background-color: #fff;
 	color: #66666b;
+	margin-left: -10px;
+	margin-right: -10px;
 }
 #about h1
 {
@@ -835,14 +903,15 @@ a.soc_small_insta {background: transparent url('../images/social_small_insta.png
 	margin-bottom: 110px;
 }
 #about p {
-	font-size: 3.3rem;
+	font-size: 2.5rem;
 	line-height: 5rem;
 	margin-bottom: 3.3rem;
 }
- a /*default has no rule*/
+a /*default has no rule*/
 {
 	font-weight: 700;
 }
+
 #about ul
 {
 	list-style: none;
@@ -1013,6 +1082,7 @@ a.soc_small_insta {background: transparent url('../images/social_small_insta.png
 	background-position: right bottom;
 	background-repeat: no-repeat;
 	color: #74622b;
+
 }
 #about .personal_details p
 {
@@ -1077,7 +1147,9 @@ a.soc_small_insta {background: transparent url('../images/social_small_insta.png
 #portfolio .container.portfolio .row.bg_row
 {
 	background-color: #fff;
-	padding-bottom: 150px;
+	/*padding-bottom: 150px;*/
+	margin-left: -10px;
+	margin-right: -10px;
 }
 #portfolio h1
 {
@@ -1459,7 +1531,7 @@ ul.blog_slide p
 /* footer */
 .container.footer_wrapper .row.bg_row
 {
-	background-color: #292929; 
+	background-color: #fff; 
 	color: #232323;
 }
 .container.footer_wrapper .social
@@ -1776,8 +1848,11 @@ a.soc_large_facebook {background: transparent url('../images/social_icons_large_
 	}
 	#home h1
 	{
-		/*padding-right: 18%;*/
+		font-size: 5rem;
+		line-height: 5rem;
+
 	}
+
 	#latest_work .latest_work_slide
 	{
 		margin-right: -10px !important;
@@ -1854,6 +1929,12 @@ a.soc_large_facebook {background: transparent url('../images/social_icons_large_
 	/*custom rules*/
 	#andrew_nav {
 		display: none;
+	}
+	#home h1
+	{
+		font-size: 4rem;
+		line-height: 5rem;
+
 	}
 	h1 {
 		font-size: 2.4rem;
