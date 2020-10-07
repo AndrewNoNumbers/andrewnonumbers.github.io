@@ -78,7 +78,7 @@
 									<li><a href="index.html#home">Home</a></li>
 									<!--<li><a href="#latest_work">Latest</a></li>-->
 									<!--<li><a href="#about">About</a></li>-->
-									<li class="active"><a href="index.html#portfolio">Work</a></li>
+									<li><a href="index.html#portfolio">Work</a></li>
 									<!--<li><a href="#blog">Blog</a></li>-->
 									<!--<li><a href="index.html#contact">Contact</a></li>-->
 									<li><a href="index.html#about">About</a></li>
@@ -129,26 +129,31 @@
 								<!--<h5>
 									Now when I had mastered the language of this water and had come to know every trifling feature that bordered the great river as familiarly as I knew the letters of the alphabet, I had made a valuable acquisition. 
 								</h5>-->
-								<video width="100%" height="80%" autoplay muted loop>
-								  <source src="curology/pb-video.mov" type="video/mp4">
-									Your browser does not support this video.
-								</video>
+								<a href="#pb-video">
+								 	<video width="100%" height="80%" autoplay muted loop class="thumbnail">
+									 	<source src="curology/pb-video.mov" type="video/mp4">
+											Your browser does not support this video.
+									</video>
+								</a>
+								<a href="#_" class="lightbox" id="pb-video">
+									<video width="100%" height="80%" autoplay muted loop>
+									 	<source src="curology/pb-video.mov" type="video/mp4">
+											Your browser does not support this video.
+									</video>
+								</a>
+
 								<figcaption>The final progress bundling design inside the provider timeline</figcaption>
 
 								<h3>What is Curology?</h3>
 								<p>Curology is the leading company in building the next generation of skincare through customized treatment plans and formulas with powerful prescription ingredients for acne and anti-aging.</p>
-
-								<h3>Role</h3>
-								<p>
-									As the designer on the project, I helped define the problem via conversations and research with the medical team lead, prototyped different ways of solving the problem, iterated through multiple rounds with the medical team lead, and specced the pitch
-								</p>
 								<h3>Timeline</h3>
 								<p>
 									3 weeks
 								</p>
 								<h3>Problem</h3>
+								<h4>How might we show a large amount of patient-generated data quickly and effectively to medical providers?</h4>
 								<p>
-									One of the Product Design team's ambitious projects is launching a new progress tracking feature called Progress, so that patients could track their skin's reaction to their formula. The hypothesized effects are multi-fold, including better efficacy because we are better able to see patients' skin reaction, better  retention and higher order value per customer, and more brand connection.
+									<strong>Background:</strong> One of the Product Design team's ambitious projects is launching a new progress tracking feature called Progress, so that patients could track their skin's reaction to their formula. The hypothesized effects are multi-fold, including better efficacy because we are better able to see patients' skin reaction, better  retention and higher order value per customer, and more brand connection.
 								</p>
 								<div class="row">
 									<div class="col-md-offset-2 col-md-8">
@@ -160,7 +165,17 @@
 									</div>
 								</div>
 								<p>
-									The problem I took the lead on relates to one of the effects of having Progress. Previously, providers made treatment decisions based on the text and pictures sent to the provider when a patient wanted to report an issue with their formula. The new Progress feature allows patients log their skin reaction and upload pictures ad-hoc as opposed to communicating directly with a provider. This means patient files could amass anywhere from a handful to dozens of Progress updates between visits with their provider. Because of this, we realized we needed to redesign our internal tools to show a much larger amount of data than before.
+									The problem I took the lead on relates to one of the effects of having Progress. Previously, providers made treatment decisions based on the text and pictures sent to the provider when a patient wanted to report an issue with their formula. The new Progress feature allows patients log their skin reaction and upload pictures at any time as opposed to communicating directly with a provider. This means patient files could amass anywhere from a handful to dozens of Progress updates between visits with their provider. Because of this, we realized we needed to redesign our internal tools to show a much larger amount of data than before.
+								</p>
+								<p>
+									<strong>User need:</strong> Medical providers have very little time for each patient, so they need to understand what is going on with the patient in as little time as possible, with no confusion. They also don't want their workflow to be drastically changed or interrupted. 
+								</p>
+								<p>
+									<strong>Business need:</strong> This project has strong alignment between user need and business need. Curology also wants medical providers to provide as accurate of care as possible while not spending too much time on each patient. Any unnecessary time needed to find information or understand a patient is lost productivity.
+								</p>
+								<h3>Collborating with a big team</h3>
+								<p>
+									As the designer on the provider side of the Progress project, I led definition of the problem via conversations and research with the medical team lead, prototyped different ways of solving the problem, iterated through multiple rounds with the medical team lead, and specced the pitch. I collaborated closely with Elijah Williams, my mentor and the lead designer on the patient side of the Progress project. I worked with Tiffany Wong and Kristen Cronnon, our UX copywriters, on how we phrase and structure questions and answer choices within Progress. I also gained a lot of insights through meetings and research sessions with the medical team lead, Jasmin Chang NP-BC. I received additional insight from our UX Researcher, Rucha Makati. The PMs on the project was Shaun Mullen, but was transitioned to Lauren Guenther. Other stakeholders were our Product Design Creative Director Michelle Vandy and CTO Glenn Lortscher. 
 								</p>
 							</div>
 							<div class="col-md-offset-3 col-md-6">
@@ -175,22 +190,19 @@
 										<figcaption>Each patient is generating a lot more medical data than before, which is useful but also presents  design challenges.</figcaption>
 									</div>
 								</div>
-								<p>
-									<strong>User need:</strong> Medical providers have very little time for each patient, so they need to understand what is going on with the patient in as little time as possible, with no confusion. They also don't want their workflow to be drastically changed or interrupted. 
-								</p>
 							</div>
 						
 							
 							<div class="col-md-offset-2 col-md-8">
 								<h3>Understanding the complexity</h3>
-								<p>Because the basic questions of the patient-facing side of Progress had already been approved and vetted, my first step was to understand what questions we are asking patients, which questions have answers that are magnitudinal, and which questions have answers that we have corresponding icons for in our design system.</p>
+								<p>Because the basic questions of the patient-facing side of Progress had already been approved and vetted, my first step was to understand what questions we are asking patients, which questions have answers that are magnitudinal (meaning it can be measured on a severity scale), and which questions have answers that we have corresponding icons for in our design system (called Radiance).</p>
 								<img src="curology/sketch.jpg" alt="initial sketches">
 								<figcaption>Mapping out all the questions and responses</figcaption>
 							</div>
 
 							<div class="col-md-offset-2 col-md-8">
-								<h3>Divergent exploration</h3>
-								<p>With the breadth of the questions in mind, I explored several different ways to present the possible patient answers in an interactive manner, each with benefits and drawbacks. The goal of this exploration is for everyone on the team to be able to grasp the tradeoffs of these vastly different paradigms, both in engineering and how they fit into the medical team workflow.</p>
+								<h3>Divergent exploration of possibilities</h3>
+								<p>With the breadth of the questions in mind, I explored several different ways to present the possible patient answers in an interactive manner, each with benefits and drawbacks. The goal of this exploration is for everyone on the team to be able to grasp the tradeoffs of these vastly different paradigms, both in engineering and how they fit into the medical team's workflow.</p>
 							</div>
 							<div class="col-md-offset-1 col-md-10">
 								<div class="row">
@@ -210,59 +222,85 @@
 							</div>
 							<div class="col-md-offset-2 col-md-8">
 								<h4>Masonry layout</h4>
-								<video width="100%" height="80%" autoplay muted loop>
-								  <source src="curology/masonry_vid.mov" type="video/mp4">
-									Your browser does not support this video.
-								</video>
+								<a href="#masonry_vid">
+								 	<video width="100%" height="80%" autoplay muted loop class="thumbnail">
+									 	<source src="curology/masonry_vid.mov" type="video/mp4">
+											Your browser does not support this video.
+									</video>
+								</a>
+								<a href="#_" class="lightbox" id="masonry_vid">
+									<video width="100%" height="80%" autoplay muted loop>
+									 	<source src="curology/masonry_vid.mov" type="video/mp4">
+											Your browser does not support this video.
+									</video>
+								</a>
 								<p>This layout prioritizes at-a-glance viewing of information from a single update with photos upfront, while other individual updates are navigated along a horizontal timeline, keyed green or red based on the reported sentiment. Masonry allows easy insertion of unanticipated progress user answers in the future. Providers can even reconfigure order to their preference. </p>
 							</div>
 							<div class="col-md-offset-2 col-md-8">
 								<h4>Table layout</h4>
-								<video width="100%" height="80%" autoplay muted loop>
-								  <source src="curology/table_vid.mov" type="video/mp4">
-									Your browser does not support this video.
-								</video>
+								<a href="#table_vid.">
+								 	<video width="100%" height="80%" autoplay muted loop class="thumbnail">
+									 	<source src="curology/table_vid.mov" type="video/mp4">
+											Your browser does not support this video.
+									</video>
+								</a>
+								<a href="#_" class="lightbox" id="table_vid.">
+									<video width="100%" height="80%" autoplay muted loop>
+									 	<source src="curology/table_vid.mov" type="video/mp4">
+											Your browser does not support this video.
+									</video>
+								</a>
 								<p>This layout prioritizes quick scanning of data both horizontally in a single update and vertically down a specific field. Some information that is less useful can be hidden in an accordion view, allowing the table to display a lot of information without scrolling.</p>
 							</div>
 							<div class="col-md-offset-2 col-md-8">
 								<h4>Graph layout</h4>
-								<video width="100%" height="80%" autoplay muted loop>
-								  <source src="curology/graph_vid.mov" type="video/mp4">
-									Your browser does not support this video.
-								</video>
+								<a href="#graph_vid">
+								 	<video width="100%" height="80%" autoplay muted loop class="thumbnail">
+									 	<source src="curology/graph_vid.mov" type="video/mp4">
+											Your browser does not support this video.
+									</video>
+								</a>
+								<a href="#_" class="lightbox" id="graph_vid">
+									<video width="100%" height="80%" autoplay muted loop>
+									 	<source src="curology/graph_vid.mov" type="video/mp4">
+											Your browser does not support this video.
+									</video>
+								</a>
 								<p>This layout visualizes the answers that have magnitude on a graph using a graphing library, allowing providers to notice trends across time. The exact user responses are also displayed on the side when the provider hovers over a date on the graph.</p>
 							</div>
 
 
 
 							<div class="col-md-offset-2 col-md-8">
-								<p><strong>Insights from testing and discussion</strong></p>
+								<p><strong>Insights from testing and discussion of these prototypes</strong></p>
+								<p>In addition to getting knowledge from those on the product team who had longer experience at the company, I met with the medical team lead and observed her performing different tasks in the provider timeline.</p>
+								<p>These were some insights:</p>
 								<ol>
-									<li>In the existing timeline, providers are very used to lots of scrolling up and down to access various pieces of information</li>
-									<li>Providers really use all of the information we ask in Progress to paint a complete picture of where the patient is in their care</li>
-									<li>In the current timeline, providers look at photos almost always, but they usually read the data first and then look at photos</li>
+									<li>In the existing timeline, providers are very used to lots of scrolling up and down to access various pieces of information, so we need to be conscious of how this new paradigm fits in. Providers also use keyboard shortcut, so again we need to be cognizant of how this paradigm is inserted into the existing workflow.</li>
+									<li>Providers really use all of the information we ask in Progress to paint a complete picture of where the patient is in their care. What this means is there is not a very clear cut hierarchy in the importance of pieces of information. There is no information that we ask that the provider does not use.</li>
+									<li>In the current timeline, providers look at photos almost always, but they usually read the data first and then look at photos because photos without context are not helpful. This means photos should not be prioritized above the other data.</li>
 								</ol>
 							</div>
 
 							<div class="col-md-offset-2 col-md-8">
 								<h3>Juggling lots of moving parts</h3>
-								<p>Even with user feedback on the initial exploration, there was a large amount of uncertainty around the project due to dependencies on other ongoing work. For example:
+								<p>Even with very rich user feedback from the initial exploration, there was a large amount of uncertainty around the project due to dependencies on other ongoing work. For example:
 								</p>
 								<ol>
 									<li>The provider timeline, which my feature sits in, is being redesigned. Should my design fit into the old timeline or the new timeline? What is the timeframe to launch for both of these projects so we know which provider timeline will be in place by the time this feature is built?</li>
-									<li>Because the patient-facing Progress feature needs to launch at the same time as this feature, we don't really know how many updates patients will be uploading between provider visits, so what information volume should this design be optimized for? </li>
+									<li>Because the patient-facing Progress feature needs to launch at the same time as the provider-facing side, we don't really know how many updates patients will be uploading between provider visits, so what information volume should this design be optimized for? </li>
 									<li>The Progress questions we are asking patients can change and be layered upon as the patient progresses through their patient journey, so how do we design an information display when the information coming in can be variable?</li>
 								</ol>
 							</div>
 
 							<div class="col-md-offset-2 col-md-8">
 								<h3>Defining constraints</h3>
-								<p>With the large amount of uncertainty around the requirements of this feature, I worked with the product manager to nail down a set of assumptions in order to launch and learn more.</p>
-								<p>I defined with the PM a set of requirements for what we need at this moment in time:</p>
+								<p>With the large amount of uncertainty around the requirements of this feature, I worked with the product manager to nail down a set of assumptions in order to nail down a v1 that we can launch and learn from.</p>
+								<p>I defined a set of requirements for what to aim for with a v1:</p>
 								<ul>
 									<li>Can handle up to 20 updates</li>
 									<li>Don't overoptimize, so design something that is implementable within 3 weeks appetite</li>
-									<li>All questions could be mapped to a set architecture (after discussion with the medical team)</li>
+									<li>All questions could be mapped to a set architecture (after discussion with the medical team and UX copywriters)</li>
 								</ul>
 							</div>
 
@@ -271,54 +309,129 @@
 								<p>In light of these constraints and user testing, the table proved to be the best solution for various reasons:
 								</p>
 								<ol>
-									<li>It is closest to following providers' current interaction pattern</li>
+									<li>It fits best into providers' current interaction pattern</li>
 									<li>It was the most learnable and usable in user testing</li>
 									<li>It was most capable at accomodating 20 updates</li>
 									<li>With a set question architecture, it was no longer troubled by issues with a defined schema</li>
 									<li>It cut engineering load compared to the other paradigms</li>
 								</ol>
-								<p>So I narrowed down to explore more detailed design decisions withing the table paradigm.</p>
-								<img src="curology/tables.png" alt="table design mockups">
-								
+								<p>So I narrowed down to explore more detailed design decisions within the table paradigm.</p>
+								<a href="#tables">
+								 	<img src="curology/tables.png" alt="table design mockups" class="thumbnail">
+								</a>
+								<a href="#_" class="lightbox" id="tables">
+									<img src="curology/tables.png" alt="table design mockups">
+								</a>
+
 								<h4>How might we balance scannability with compactness?</h4>
-								<img src="curology/compare_1.png" alt="two designs in comparison">
-								<figcaption>Having consistently-spaced columns improves scannability down a particular column, but takes more space than a horizontally-stacked design</figcaption>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<a href="#compare_1">
+								 	<img src="curology/compare_1.png" alt="two designs in comparison" class="thumbnail">
+								</a>
+								<a href="#_" class="lightbox" id="compare_1">
+									<img src="curology/compare_1.png" alt="two designs in comparison">
+								</a>
+								
+								<!--<figcaption>Having consistently-spaced columns improves scannability down a particular column, but takes more space than a horizontally-stacked design</figcaption>-->
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-offset-2 col-md-8 annotation-group">
+								<p><strong class="annotation">A1</strong> In a standard table format, it's a challenge to fit all information within the horizontal space allowed in the timeline. Here, each symptom is listed on a new line, which means it can take up a lot more vertical space than other columns. Providers preferred this because it made it easy to more quickly read symptoms and it served as a proxy to quick see when an update has a lot of symptoms.</p>
+								<p><strong class="annotation">A2</strong> An idea that saves space is representing days per week of use using dots – however there is a tradeoff in that the dots must represent a discrete number of days per week whereas our answer choices are all ranges of days, 5-6 days per week for example. I also wondered if it would be challenging for providers to know what the dots and d/w mean. However feedback was very positive for it, as providers found that it reduced effort to understand it because it's almost like having small bar graphs within the table.</p>
+								<p><strong class="annotation">B</strong> Having information in each update displayed fully in-line (reusing Radiance's status component) means updates with less information naturally take up less space. Photos fit neatly into the in-line format. Though it fits more data on the screen, providers exhibited more challenge in reading the information.</p>
+								<br>
 								<h4>How might we compare the benefits of icons with extensibility of text?</h4>
-								<img src="curology/compare_2.png" alt="two designs in comparison">
-								<figcaption>Curology has existing icons to denote certain conditions, but some icons proved to be harder to read than text</figcaption>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<a href="#compare_2">
+								 	<img src="curology/compare_2.png" alt="two designs in comparison" class="thumbnail">
+								</a>
+								<a href="#_" class="lightbox" id="compare_2">
+									<img src="curology/compare_2.png" alt="two designs in comparison">
+								</a>
+								<!--<figcaption>Curology has existing icons to denote certain conditions, but some icons proved to be harder to read than text</figcaption>-->
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-offset-2 col-md-8 annotation-group">
+								<p><strong class="annotation">C</strong> This table has discrete columns for all data except for symptoms, which are listed in-line to save space but displayed using the status component so it is easier to distinguish each symptom. Duration of symptoms is integrated into this in-line list to save space.</p>
+								<p><strong class="annotation">D</strong> After some testing with providers, I found that icons for skin change (more pimples, etc.) actually made it slower to distinguish than the text, while the sentiment icon caused slight difficulty as well. This table reverts to a text label for skin change. </p>
+								<p><strong class="annotation">D1</strong> This separates the month from the date, leaving only the date in the data column. The hypothesis is if the month is left off to the top of the table, it may make it even faster for providers to breeze through data. In testing, however, providers found it more awkward. </p>
+								<br>
 								<h4>How might we make it clear what triggered the interaction?</h4>
-								<img src="curology/compare_3.png" alt="two designs in comparison">
-								<figcaption>It's important to show medical providers what the most important health issue in trigger cases is without being so prescriptive that it takes away their agency in making treatment decisions, so I explore subtle ways of showing trigger cases</figcaption>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<a href="#compare_3">
+								 	<img src="curology/compare_3.png" alt="two designs in comparison" class="thumbnail">
+								</a>
+								<a href="#_" class="lightbox" id="compare_3">
+									<img src="curology/compare_3.png" alt="two designs in comparison">
+								</a>
+								<!--<figcaption>It's important to show medical providers what the most important health issue in trigger cases is without being so prescriptive that it takes away their agency in making treatment decisions, so I explore subtle ways of showing trigger cases</figcaption>-->
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-offset-2 col-md-8 annotation-group">
+								<p><strong class="annotation">E</strong> There are certain patterns of updates that patients log that are designed to trigger an intervention from the provider. One such pattern is if patients log the same symptom three times in a row. In this example, I use the indicator pill to show that a symptom has appeared three times.</p>
+								<p><strong class="annotation">F</strong> In this iteration, we  highlight the symptom that is being repeated.</p>
+								<p><strong class="annotation">F1</strong> Here, I also applied the dot indicator to severity – one dot means symptoms are mild, two dots means symptoms are moderate, and three dots means symptoms are severe.</p>
+								<p><strong class="annotation">F2</strong> Because of previous feedback that the skin change icon represented as pimples was difficult to read quickly, skin change is represented using another set of icons: + for skin is improving, - for skin is getting worse, and = for no skin change.</p>
 							</div>
 
-
+							<div class="col-md-offset-2 col-md-8">
+								<h4>Change icon exploration</h4>
+								<p>With a team of providers who is using this interface hundreds of times a day, day in and day out, it was important to consider all details. One such detail is the icon language we use to convey skin change.</p>
+								<img src="curology/icon_exploration.png" alt="comparison of four ways to display change icons">
+								<figcaption>The goal was to find a way that communicates to providers skin change most quickly and without misintrepretation</figcaption>
+							</div>
 
 							<div class="col-md-offset-2 col-md-8">
 								<h3>Handover</h3>
 								<p>Having worked through these issues with guerilla testing with the medical team lead and a critique within the product design team, the table design was close to being finalized.</p>
 								<p>Through the design process I had used edge cases to make sure the design would not need adjustment at the end. However, through discussion with the medical team, a few changes were introduced, for example an accordion button to roll up the progress bundle. These were put through some final testing and iteration.</p>
 								<p>Before writing the final documentation, I also had a discussion with the engineering manager to check the final feasibility of the design.</p>
-								<p>The final design was specced and put into a pitch in the Shape Up process.</p>
+								<p>The final design was specced and submitted as a pitch in the Shape Up process (Curology's product development process).</p>
 								<img src="curology/speccing.png" alt="Redlines of progress bundling spec">
-								<figcaption>Columns, gutters, and margins are carefully set to the 8px grid</figcaption>
-								<video width="100%" height="80%" autoplay muted loop>
-								  <source src="curology/pb-video.mov" type="video/mp4">
-									Your browser does not support this video.
-								</video>
+								<figcaption>Aligning to Radiance guidelines, all columns, gutters, and margins are set to a 8px grid</figcaption>
+								<a href="#pb-video">
+								 	<video width="100%" height="80%" autoplay muted loop class="thumbnail">
+									 	<source src="curology/pb-video.mov" type="video/mp4">
+											Your browser does not support this video.
+									</video>
+								</a>
+								<a href="#_" class="lightbox" id="pb-video">
+									<video width="100%" height="80%" autoplay muted loop>
+									 	<source src="curology/pb-video.mov" type="video/mp4">
+											Your browser does not support this video.
+									</video>
+								</a>
 								<figcaption>The final progress bundling design inside the provider timeline</figcaption>
 							</div>
 
 							<div class="col-md-offset-2 col-md-8">
 								<h3>Conclusion</h3>
 								<p>With a table layout, I was able to lead the team to a design that was highly effective and could be implemented quickly enough so that the team could learn more about how the Progress feature performs out in the real world. The table view puts a large volume of patient data into a succinct view that allows providers to successfully understand the patient's triumphs, struggles, confidence, and frustration in between visits.</p>
-								<img src="curology/ui_story.png" alt="how providers see the information">
+								<a href="#ui_story">
+								 	<img src="curology/ui_story.png" alt="how providers see the information" class="thumbnail">
+								</a>
+								<a href="#_" class="lightbox" id="ui_story">
+									<img src="curology/ui_story.png" alt="how providers see the information">
+								</a>
 								<figcaption>I was delighted to see that providers could extrapolate a patient's story by looking at the data in the progress bundle</figcaption>
 								<p>The impact of this work is that the team is able to provide better, more accurate, and more responsive adjustments to the patient's treatment through more data, which helps patients while also helping Curology &mdash; the more efficacious Curology's care is, the more likely it is the patient will stay and recommend the subscription to friends. The Progress feature is being rolled out via cohort testing with patient engagement, satisfaction, and churn monitored against the control.
 								</p>
 								<img src="curology/provider.jpg" alt="provider in meeting">
 								<figcaption>As the Progress feature is rolled out to patient cohorts over the next few months, and providers will be using the progress bundle table to stay updated with patients' progress journey between visits.</figcaption>
-								<p>Curology's brand pillars are <strong>emphasizing the personal journey, celebrating personal achievements rather than societal standards of beauty,</strong> and <strong>being frank about efficacy</strong> via our team of <strong>experts with big hearts</strong>. With this project, the team has shepherded Curology's digital experience one step closer to its brand mission.</p>
-								<p>To see more about my summer at Curology, <a href="curology-other.html">see here</a>.</p>
+								<!--<p>Curology's brand pillars are <strong>emphasizing the personal journey, celebrating personal achievements rather than societal standards of beauty,</strong> and <strong>being frank about efficacy</strong> via our team of <strong>experts with big hearts</strong>. With this project, the team has shepherded Curology's digital experience one step closer to its brand mission.</p>-->
+								<p>In addition to this project, I also worked on the Radiance design system, web accessibility, A/B tests, and a desktop design at Curology. To read more, see <a href="curology-other.html">My summer at Curology</a>.</p>
 							</div>
 						</div>
 
@@ -465,7 +578,9 @@
 								<p class="copyright">
 									reach out.
 								</p>
-								<p class="signoff">Designed by Andrew Chen</p>
+								<p><a href="#"><img src="images/drawn-logo-dark.png" style="width: 4rem"></a></p>
+								
+								<!--<p class="signoff">designed by andrew chen</p>-->
 								<p class="signoff2">&copy;2020</p>
 							</div>
 						</div><!-- /.row -->
