@@ -1700,7 +1700,11 @@ a.soc_large_facebook {background: transparent url('../images/social_icons_large_
 	margin-bottom: 4rem;
 }
 /* single post */
-	/* single slider */
+
+#interview_prep a {
+	font-weight: 400;
+}
+
 
 .annotation-group {
 	margin-top: 1.6rem;
@@ -2047,6 +2051,15 @@ a.soc_large_facebook {background: transparent url('../images/social_icons_large_
 	}
 	.logo {
 		margin-top: 0px;
+	}
+
+	.about-p {
+		font-size: 1.7rem;
+		line-height: 3.7rem;
+	}
+
+	.link-wall img {
+		max-width: 3rem;
 	}
 
 	h1 {
