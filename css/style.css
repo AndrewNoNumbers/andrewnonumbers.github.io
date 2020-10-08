@@ -126,12 +126,12 @@ html {
 
 }
 .squiggly-divider {
-	padding: 30px;
-	margin: 40px;
+	padding: 4rem;
+	margin: 3rem;
 	animation: bounce 3s ease infinite;
 }
 .squiggly-divider img {
-	max-width: 200px;
+	max-width: 22rem;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -415,7 +415,7 @@ a:hover {
 body
 {
 	background-color: #fff;
-	font-family: 'Avenir',sans-serif,Arial;
+	font-family: 'Avenir', Helvetica, sans-serif;
 	font-weight: normal;
 	font-size: 15px;
 	line-height: 30px;
@@ -2058,6 +2058,13 @@ a.soc_large_facebook {background: transparent url('../images/social_icons_large_
 		line-height: 3.7rem;
 	}
 
+	.squiggly-divider img {
+		max-width: 15rem;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
 	.link-wall img {
 		max-width: 3rem;
 	}
@@ -2147,10 +2154,7 @@ a.soc_large_facebook {background: transparent url('../images/social_icons_large_
 	{
 		margin-bottom: 20px;
 	}
-	#portfolio .container.portfolio .row.bg_row
-	{
-		padding-bottom: 100px;
-	}
+
 	ul.gallery_portfolio li.item p
 	{ 
 		font-size: 0.9rem;
