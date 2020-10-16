@@ -1377,6 +1377,7 @@ ul.gallery_portfolio li.item img
 .ovelay_holder
 {
 	position: relative;
+	max-height: 285px;
 }
 .item-overlay 
 {
