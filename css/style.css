@@ -1804,6 +1804,8 @@ a.soc_large_facebook {background: transparent url('../images/social_icons_large_
 #single_post .media-object
 {
 	margin-top: 5px;
+	margin-right: 2.8rem;
+	max-width: 80px;
 }
 #single_post li .comment_line
 {
@@ -1825,8 +1827,8 @@ a.soc_large_facebook {background: transparent url('../images/social_icons_large_
 }
 #single_post .media-body p
 {
-	font-size: 17px;
-	line-height: 27px;
+	font-size: 15px;
+	line-height: 30px;
 }
 #single_post .post_info a
 {
@@ -1836,7 +1838,7 @@ a.soc_large_facebook {background: transparent url('../images/social_icons_large_
 }
 #single_post .media-list
 {
-	font-size: 14px;
+	font-size: 18px;
 	letter-spacing: 0;
 	padding-left: 15px;
 }
