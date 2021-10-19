@@ -8,6 +8,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Work+Sans');
 @import url('https://fonts.googleapis.com/css?family=Manrope');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
 
 /*serif headings*/
 /*@import url('https://fonts.googleapis.com/css?family=PT+Serif'); /*good*/
@@ -283,7 +284,7 @@ a:hover {
 	}
 }
 .case_studies img {
-	/*border-radius: 10px;*/
+	border-radius: 10px;
 	z-index: -999;
 	position: auto;
 }
@@ -425,15 +426,15 @@ a:hover {
 /* general styling */
 body {
 	background-color: #f5f6fa;
-	font-family: Avenir, 'Manrope', Helvetica Neue, sans-serif;
-	font-weight: normal;
+	font-family: Avenir, Helvetica, sans-serif;
+	font-weight: 100;
 	font-size: 15px;
 	line-height: 30px;
 	letter-spacing: -0.02em;
 	/*animation: background-switch 10s infinite;*/
 }
 h1 {
-	font-family: Avenir, 'Manrope', Helvetica Neue, sans-serif;
+	font-family: 'Noto Serif', Helvetica Neue, sans-serif;
 	font-weight: 500;
 	animation: appear 0.8s;
 	font-size: 2.8rem;
@@ -514,7 +515,7 @@ img {
 	text-align: left;
 	font-style: normal;
 	font-size: 1.3rem;
-	padding-bottom: 1rem;
+	padding-bottom: 0.6rem;
 }
 figcaption {
 	font-size: 1.3rem;
@@ -639,7 +640,7 @@ a:hover
 #andrew_nav .nav li a {
 	color: black;
 	font-size: 1.3rem;
-	font-weight: 400;
+	font-weight: 500;
 	/*text-transform: uppercase;
 	letter-spacing: 0.2rem;*/
 }
@@ -660,8 +661,8 @@ a:hover
 }*/
 
 #andrew_nav {
-	background-color: #f5f6fa;
-	/*border-bottom: 1px solid rgba(255,255,255,0.07);*/
+	background-color: #fcf9f0;
+	border-bottom: 1px solid rgba(239,235,213,0.3);
 }
 
 ul.nav
@@ -763,13 +764,13 @@ ul.menu_ul a
 	width: 40px;
 	height: 36px;
 	margin-top: 8px;
-	background-image: url(../images/drawn-logo-dark.png);
+	background-image: url(../images/newlogo.png);
 	background-repeat: no-repeat;
-	background-size: 40px, 40px;
+	background-size: 32px, 32px;
 	margin-left: -1.3rem;
 }
 .logo:hover {
-	background-image: url(../images/drawn-logo-dark.png);
+	background-image: url(../images/newlogo.png);
 	/*transform: rotate(-8deg);
 	transform-origin: center center;*/
 }
@@ -855,26 +856,31 @@ ul.menu_ul a
 	margin-left: -.1rem;
 	padding-bottom: 1.4vh;
 
-	font-family: Avenir, 'Manrope', Helvetica Neue, sans-serif;
+	font-family: 'Noto Serif', Helvetica Neue, sans-serif;
 }
 #home p {
 
-	margin-top: 2vh;
+	margin-top: 4vh;
 
 	font-size: 2.8rem;
 	line-height: 4.2rem;
 
 	margin-left: -.1rem;
 
+	font-family: 'Noto Serif';
+
+
 }
 #home .type-block {
-	padding: 16vh 0 9vh 0;
+	padding: 10vh 0 9vh 0;
 
 	/*text-align: left;*/
 
 	color: #000;
 
 	text-align: left;
+
+	font-weight: 200;
 
 }
 #home h2 {
@@ -1664,7 +1670,6 @@ ul.blog_slide p
 /* footer */
 .container.footer_wrapper .row.bg_row
 {
-	background-color: #fff; 
 	color: #232323;
 }
 .container.footer_wrapper .social
@@ -1816,7 +1821,7 @@ a.soc_large_facebook {background: transparent url('../images/social_icons_large_
 #single_post p.single_info_date
 {
 	margin-bottom: 55px; 
-	color: #b7b7b7;
+	color: #6b6b6b;
 }
 #single_post h5
 {
@@ -1850,6 +1855,12 @@ a.soc_large_facebook {background: transparent url('../images/social_icons_large_
 }
 .avatar-and-info {
 	padding: 4rem 0 0.4rem 0;
+}
+.avatar-and-info img {
+	border-radius: 10rem;
+}
+.avatar-and-info .job-title {
+	font-family: 'Noto Serif';
 }
 #single_post li .comment_line
 {
