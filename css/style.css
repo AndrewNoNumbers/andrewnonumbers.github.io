@@ -897,11 +897,11 @@ ul.menu_ul a
 	font-style: italic;
 
 }
-.type-block h2 .letter-one {
+.letter-one {
 	color: rgba(93,41,125,0.8);
 	animation: appear 0.8s;
 }
-.type-block h2 .letter-two {
+.letter-two {
 	color: rgba(255,67,8,0.7);
 	animation: appear 1.8s;
 }
