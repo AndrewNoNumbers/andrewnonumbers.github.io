@@ -761,9 +761,10 @@ ul.menu_ul a
 {
 	padding-top: 5px;
 }
-.navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.active>a:hover,.navbar-inverse .navbar-nav>.active>a:focus{background-color: transparent;}
+.navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.active>a:hover,.navbar-inverse .navbar-nav>.active>a:focus{/*background-color: transparent;*/}
 .navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-brand:focus{color:#999999;border: none;outline: none;}
-.logo
+
+.name
 {
 	display: inline-block;
 	width: 40px;
@@ -773,11 +774,18 @@ ul.menu_ul a
 	background-repeat: no-repeat;
 	background-size: 32px, 32px;
 	margin-left: -1.3rem;
+	opacity: 0.9;
 }
-.logo:hover {
+.name:hover {
 	background-image: url(../images/newlogo.png);
-	/*transform: rotate(-8deg);
-	transform-origin: center center;*/
+	background-repeat: no-repeat;
+	background-size: 32px, 32px;
+	opacity: 1;
+	transform: scale(1.1);
+	transition: 190ms ease-out;
+}
+.name-active {
+	animation: remind 2s ease-in-out;
 }
 
 /* mobile menu */
@@ -896,6 +904,9 @@ ul.menu_ul a
 	font-weight: 900;
 	font-style: italic;
 
+}
+#home strong {
+	font-weight: 700;
 }
 .letter-one {
 	color: rgba(93,41,125,0.8);
