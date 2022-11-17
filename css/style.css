@@ -884,6 +884,7 @@ ul.menu_ul a
 	font-family: Work Sans;
 	font-weight: 300;
 
+	color: #;
 
 }
 #home .type-block {
@@ -899,21 +900,20 @@ ul.menu_ul a
 
 }
 #home h2 {
-	font-size: 8rem;
+	font-size: 2rem;
 	font-family: Work Sans;
-	font-weight: 900;
-	font-style: italic;
+	font-weight: 700;
 
 }
 #home strong {
 	font-weight: 700;
 }
 .letter-one {
-	color: rgba(93,41,125,0.8);
+
 	animation: appear 0.8s;
 }
 .letter-two {
-	color: rgba(255,67,8,0.7);
+
 	animation: appear 1.8s;
 }
 /* home social */
@@ -1883,7 +1883,7 @@ a.soc_large_facebook {background: transparent url('../images/social_icons_large_
 
 }
 .avatar-and-info {
-	padding: 8rem 0 4rem 0;
+	padding: 4rem 0 0rem 0;
 }
 .avatar-and-info img {
 	border-radius: 10rem;
@@ -1891,9 +1891,12 @@ a.soc_large_facebook {background: transparent url('../images/social_icons_large_
 .avatar-and-info .job-title {
 	font-family: Avenir;
 }
-#single_post li .comment_line
+.comment_line
 {
-	padding-bottom: 35px;
+	margin-top: 1rem;
+	padding-top: 1rem;
+	border-top: 1px solid #f1f1f1;
+	font-style: italic;
 	/*border-bottom: 1px solid #f1f1f1;*/
 }
 #single_post h2
