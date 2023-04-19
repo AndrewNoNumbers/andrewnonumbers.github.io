@@ -3223,7 +3223,7 @@ img.u-pull-left {
     line-height    : 1.0998;
     letter-spacing : -.01em;
     margin-top     : 0;
-    color          : var(--color-1-light);
+    color          : var(--color-gray-12);
 }
 
 .s-intro__text h3 span {
@@ -3237,17 +3237,17 @@ img.u-pull-left {
     letter-spacing   : -0.015em;
     margin-top       : calc(var(--text-huge-size) / 2 * -1.2);
     margin-bottom    : var(--vspace-1_25);
-    color            : var(--color-1-light);
+    color            : var(--color-black);
 }
 
 /* --------------------------------------------------------------------
  * ## intro bg
  * -------------------------------------------------------------------- */
 .s-intro__bg {
-    aspect-ratio        : 1/1;
+    aspect-ratio        : 1.8/1;
     width               : 100%;
     background-color    : var(--color-gray-4);
-    background-image    : url(../me-1400.jpg);
+    background-image    : url(../bobby-yang-BhPS0x7WdPs-unsplash.jpg);
     background-repeat   : no-repeat;
     background-position : center;
     background-size     : cover;
