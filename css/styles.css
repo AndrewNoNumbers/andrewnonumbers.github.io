@@ -1612,7 +1612,7 @@ hr.fancy::before {
 .attention-getter {
     font-family : var(--font-1);
     font-weight : 400;
-    font-size   : var(--text-lg);
+    font-size   : var(--text-md);
     line-height : 1.8275;
     color       : var(--color-text-dark);
 }
@@ -2724,7 +2724,7 @@ td:last-child {
 
 .text-huge-title {
     --text-huge       : 9.4rem;
-    --text-multiplier : 1;
+    --text-multiplier : 0.4;
     font-family       : var(--font-2);
     font-weight       : 400;
     font-size         : calc(var(--text-huge) * var(--text-multiplier));
@@ -2736,7 +2736,7 @@ td:last-child {
 
 .text-subtitle {
     font-family    : var(--font-1);
-    font-size      : var(--text-size);
+    font-size      : calc(var(--text-size) * 0.7);
     font-weight    : 500;
     color          : var(--color-text-dark);
     text-transform : uppercase;
@@ -2809,25 +2809,25 @@ img.u-pull-left {
     }
 
     .text-huge-title {
-        --text-multiplier : .9;
+        --text-multiplier : .4;
     }
 }
 
 @media screen and (max-width: 800px) {
     .text-huge-title {
-        --text-multiplier : .84;
+        --text-multiplier : .4;
     }
 }
 
 @media screen and (max-width: 700px) {
     .text-huge-title {
-        --text-multiplier : .74;
+        --text-multiplier : .4;
     }
 }
 
 @media screen and (max-width: 600px) {
     .text-huge-title {
-        --text-multiplier : .64;
+        --text-multiplier : .4;
     }
 }
 
@@ -2837,19 +2837,19 @@ img.u-pull-left {
     }
 
     .text-huge-title {
-        --text-multiplier : .58;
+        --text-multiplier : .4;
     }
 }
 
 @media screen and (max-width: 480px) {
     .text-huge-title {
-        --text-multiplier : .54;
+        --text-multiplier : .4;
     }
 }
 
 @media screen and (max-width: 400px) {
     .text-huge-title {
-        --text-multiplier : .45;
+        --text-multiplier : .4;
     }
 }
 
@@ -3458,7 +3458,7 @@ img.u-pull-left {
 .timeline__title {
     font-family   : var(--font-2);
     font-weight   : 400;
-    font-size     : var(--text-xl);
+    font-size     : var(--text-lg);
     line-height   : 1.0966;
     margin-top    : 0;
     margin-bottom : var(--vspace-0_125);
@@ -3467,13 +3467,13 @@ img.u-pull-left {
 .timeline__meta {
     font-family   : var(--font-1);
     font-weight   : 400;
-    font-size     : calc(var(--text-size) * 1.1053);
+    font-size     : calc(var(--text-size) * 0.9);
     margin-top    : 0;
     margin-bottom : var(--vspace-0_125);
 }
 
 .timeline__timeframe {
-    font-size      : calc(var(--text-size) * 0.7368);
+    font-size      : calc(var(--text-size) * 0.7);
     line-height    : var(--vspace-0_75);
     text-transform : uppercase;
     letter-spacing : .15em;
@@ -3827,7 +3827,7 @@ img.u-pull-left {
 }
 
 .testimonial-slider__slide p {
-    font-size   : var(--text-xl);
+    font-size   : var(--text-md);
     line-height : 1.6244;
 }
 
@@ -3939,7 +3939,7 @@ img.u-pull-left {
     }
 
     .testimonial-slider__slide p {
-        font-size : var(--text-lg);
+        font-size : var(--text-md);
     }
 
     .testimonial-slider__next,
