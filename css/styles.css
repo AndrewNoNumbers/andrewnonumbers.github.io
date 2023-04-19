@@ -3231,7 +3231,7 @@ img.u-pull-left {
 }
 
 .s-intro__text-huge {
-    --text-huge-size : 18rem;
+    --text-huge-size : 14rem;
     font-size        : var(--text-huge-size);
     line-height      : 1;
     letter-spacing   : -0.015em;
@@ -3321,13 +3321,13 @@ img.u-pull-left {
  * ------------------------------------------------------------------- */
 @media screen and (max-width: 1400px) {
     .s-intro__text-huge {
-        --text-huge-size : 22rem;
+        --text-huge-size : 14rem;
     }
 }
 
 @media screen and (max-width: 1200px) {
     .s-intro__text-huge {
-        --text-huge-size : 18vw;
+        --text-huge-size : 10rem;
     }
 }
 
