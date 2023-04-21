@@ -3345,7 +3345,7 @@ img.u-pull-left {
 @media screen and (max-width: 900px) {
     .s-intro__text-huge {
         --text-huge-size : 2.4rem;
-        line-height: 3rem;
+        line-height: 3.2rem;
     }
     .s-intro__text h3 {
         font-size : 3rem;
