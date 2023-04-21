@@ -3326,13 +3326,13 @@ img.u-pull-left {
 
 @media screen and (max-width: 1200px) {
     .s-intro__text-huge {
-        --text-huge-size : 2rem;
+        --text-huge-size : 3rem;
     }
 }
 
 @media screen and (max-width: 1100px) {
     .s-intro__text h3 {
-        font-size : 2rem;
+        font-size : 3rem;
     }
 }
 
@@ -3344,27 +3344,27 @@ img.u-pull-left {
 
 @media screen and (max-width: 900px) {
     .s-intro__text h3 {
-        font-size : 2rem;
+        font-size : 3rem;
     }
 
     .s-intro__text-huge {
-        margin-bottom : var(--vspace-1);
+        padding-bottom : var(--vspace-2);
     }
 }
 
 @media screen and (max-width: 800px) {
     .s-intro__text h3 {
-        font-size : 2rem;
+        font-size : 3rem;
     }
 
     .s-intro__text-huge {
-        margin-bottom : var(--vspace-0_5);
+        padding-bottom : var(--vspace-2_5);
     }
 }
 
 @media screen and (max-width: 600px) {
     .s-intro__text h3 {
-        font-size : 2rem;
+        font-size : 3rem;
     }
 }
 
