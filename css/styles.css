@@ -3810,6 +3810,7 @@ img.u-pull-left {
  * ------------------------------------------------------------------- */
 .testimonials {
     margin-top : var(--vspace-4_5);
+    margin-bottom : var(--vspace-3);
 }
 
 .testimonial-slider {
@@ -3819,7 +3820,7 @@ img.u-pull-left {
 }
 
 .testimonial-slider__slide {
-    background-color : white;
+    background-color : none;
     text-align       : center;
     width            : 100%;
     position         : relative;
