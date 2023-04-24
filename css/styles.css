@@ -2415,6 +2415,9 @@ td:last-child {
     visibility    : visible;
     position      : relative;
 }
+.alert-box p {
+    margin-bottom: 0;
+}
 
 .alert-box__close {
     position : absolute;
@@ -3703,7 +3706,12 @@ img.u-pull-left {
 }
 
 .folio-item__caption {
-    display : none;
+    display: block;
+    color: var(--color-gray-8);
+    font-size: var(--text-xs);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
 }
 
 /* thumbnail
@@ -3764,7 +3772,7 @@ img.u-pull-left {
 /* portfolio info
  */
 .folio-item__info {
-    padding : var(--vspace-0_75) 0 var(--vspace-0_5);
+    padding : var(--vspace-0_75) 0 0 0;
 }
 
 .folio-item__title {
@@ -3774,8 +3782,9 @@ img.u-pull-left {
 .folio-item__meta {
     font-family   : var(--font-1);
     font-size     : var(--text-sm);
+    font-weight: 500;
     line-height   : 1.5;
-    margin-bottom : 0.2rem;
+    margin-bottom : 0.8rem;
     color         : var(--color-gray-8);
 }
 

@@ -6,7 +6,7 @@
     ================================================== -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Andrew Chen. New Relic Docs</title>
+    <title>Andrew Chen. New Relic SCIM</title>
 
     <script>
         document.documentElement.classList.remove('no-js');
@@ -96,10 +96,10 @@
                         <h1 class="s-intro__text-huge animate-on-load">
                             New Relic
                         </h1>
-                        <h3 class="animate-on-load">Increasing reader feedback and resolving navigation issues on New Relic's high-traffic docs site</h3>
+                        <h3 class="animate-on-load">Adding SCIM for New Relic to alleviate user provisioning and management pains for enterprise customers</h3>
                     </div>
 
-                    <div class="s-newrelic__cover">
+                    <div class="s-newrelic__cover" style="background-image: url(newrelic-scim/newrelic-scim-cover.jpg);">
                     </div>
 
                 </div>
@@ -114,7 +114,7 @@
             <div class="row">
                 <div class="column lg-12">
                     <div class="alert-box alert-box--notice">
-                        <p>Hello! Although my main team at New Relic was identity & access management, I volunteered to take on this work with the docs team. Unlike other projects within the purview of the design system, the docs work required a lot of nuanced interaction and visual design, and also allowed me to use my experience with responsive web to ensure docs works for desktop, tablet, and mobile readers. I haven't built this project into a case study yet; however, the basics are below – please messsage me to learn more! I have a presentation ready.</p>
+                        <p>Hello! At New Relic, for 18 months, I was the principal designer paired with identity & access management teams, which allowed me to become an expert on how our largest customers manage users, resolve access issues, and integrate SaaS with their identity providers. This SCIM API launch was a big milestone for New Relic to be able to support enterprise customers without custom workarounds. I haven't built this project into a case study yet; however, the basics are below. </p>
 
                     </div><!-- end info -->
                         
@@ -135,38 +135,21 @@
             <div class="row">
                 <div class="column lg-12">
                     <h2>Problem</h2>
-                    <p>There were two main problems I was briefed on by the docs team. 1) Docs writers rely on feedback to know where to dedicate more resources, however the Docs site did not receive much feedback through its on-page feedback mechanism. 2) A UX metrics project showed that the Docs site scores low in 'Ease of use' and 'Ease of navigation' – how might we improve these scores?</p>
+                    <p>Enterprise customers expect New Relic to work with seamlessly with their systems and to be able to provision and deprovision New Relic users using their identity provider. However, this is not possible without New Relic building support for SCIM provisioning and also allowing customers to manage user type via SCIM.</p>
                 </div>
             </div>
 
             <div class="row">
                 <div class="column lg-12">
                     <h2>Action</h2>
-                    <p>The first piece, getting more reader feedback for docs, had a very tight turnaround, and was a good opportunity for me to build trust with the team. By delivering a solution that was easily doable and took into account technical constraints, I was able to build a relationship with the Docs engineering team and Docs writers.</p>
-                    <p>
-                        The second piece, bumping up 'Ease of use' and 'Ease of navigation', was a more involved project that involved synthesizing research data, aligning the team on the main challenges, and coming up with a holistic navigation redesign that solved the myriad of navigation flaws while aligning the new Docs design with our design system.
-                    </p>
+                    <p>Collaborating with the principal product manager and software architect, I designed, tested, and helped the engineering team implement the configuration experience for SCIM and SCIM user type management. The experience provides customers with a high level of integration with their IT systems and policies, while also allowing New Relic to support both free users and paid users and bundle an upsell path for free users.</p>
                 </div>
             </div>
 
             <div class="row">
                 <div class="column lg-12">
                     <h2>Result</h2>
-                    <p>Though there's always more to improve, this project exceeded the team's objectives. The redesigned feedback mechanism gathered much more reader feedback than the old one, allowing the Docs writer to be more agile in improving content, and also allowed the team to receive text suggestions. The navigation redesign resolved some longstanding complaints, set up the site for scale, and improved 'Ease of use' and 'Ease of navigation' scores the next time we ran the UX metrics survey.</p>
-                </div>
-            </div>
-
-        </section>
-
-        <section id="about" class="s-about">
-            <div class="row">
-                <div class="column lg-6">
-                    <img src="newrelic/annotated-single-nav.jpg" alt="">
-                    <figcaption>An initial design exploration for applying a new design system</figcaption>
-                </div>
-                <div class="column lg-6">
-                    <img src="newrelic/annotated-unified-nav.jpg" alt="">
-                    <figcaption>A second iteration that took advantage of new capability for a unified nav</figcaption>
+                    <p>SCIM provisioning and management of user type was a huge ask from customers, and successfully shipping this feature allowed New Relic to renew some of its biggest contracts and also court new customers to the enterprise plan.</p>
                 </div>
             </div>
 
