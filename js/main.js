@@ -200,13 +200,15 @@
 
 
 
+   
+
    /* animate elements if in viewport
     * ------------------------------------------------------ */
     const ssAnimateOnScroll = function() {
 
         const blocks = document.querySelectorAll('[data-animate-block]');
 
-        window.addEventListener('scroll', animateOnScroll);
+        window.addEventListener('DOMContentLoaded', animateOnScroll);
 
         function animateOnScroll() {
 
@@ -374,6 +376,7 @@
         ssBackToTop();
         ssMoveTo();
 
+        animateChildrenOnLoad('#folio');
     })();
 
 })(document.documentElement);

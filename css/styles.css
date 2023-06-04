@@ -3214,7 +3214,7 @@ img.u-pull-left {
     z-index    : 2;
     width      : 100%;
     text-align : center;
-    margin-bottom: 10rem;
+    margin-bottom: 8rem;
 }
 
 .s-intro__text h3 {
@@ -3232,11 +3232,11 @@ img.u-pull-left {
 }
 
 .s-intro__text-huge {
-    --text-huge-size : 3rem;
+    --text-huge-size : 2.8rem;
     font-size        : var(--text-huge-size);
     line-height      : 5rem;
     letter-spacing   : -0.015em;
-    margin-top       : calc(var(--text-huge-size) / 2 * -1.2);
+    margin-top       : calc(var(--text-huge-size) / 2 * -1.4);
     margin-bottom    : var(--vspace-1_25);
     color            : var(--color-black);
 }
@@ -3276,7 +3276,7 @@ img.u-pull-left {
     aspect-ratio        : 1/1;
     width               : 100%;
     background-color    : var(--color-gray-4);
-    background-image    : url(../zest/zest-cover-min.jpg);
+    background-image    : url(../zest/zest-cover-new.jpg);
     background-repeat   : no-repeat;
     background-position : center;
     background-size     : cover;
@@ -3287,7 +3287,7 @@ img.u-pull-left {
     aspect-ratio        : 1/1;
     width               : 100%;
     background-color    : var(--color-gray-4);
-    background-image    : url(../newrelic/newrelic-cover-min.jpg);
+    background-image    : url(../newrelic/newrelic-cover-new.jpg);
     background-repeat   : no-repeat;
     background-position : center;
     background-size     : cover;
@@ -3385,7 +3385,7 @@ img.u-pull-left {
     --timeline-top-adjust          : calc(var(--subtitle-line-height) / 2);
     --timeline-vertical-border-pos : 8px;
 
-    padding-top                    : var(--vspace-3);
+    padding-top                    : var(--vspace-2);
     padding-bottom                 : var(--vspace-3);
 }
 
@@ -3680,8 +3680,8 @@ img.u-pull-left {
  *
  * ------------------------------------------------------------------- */
 .s-works {
-    padding-top      : calc(2 * var(--space));
-    padding-bottom   : calc(3 * var(--space));
+    padding-top      : /*calc(2 * var(--space))*/;
+    padding-bottom   : /*calc(3 * var(--space))*/;
     background-color : white;
 }
 
@@ -3814,6 +3814,8 @@ img.u-pull-left {
     visibility : visible;
     transform  : scale(1);
 }
+
+
 
 /* ------------------------------------------------------------------- 
  * ## testimonial slider
@@ -4008,8 +4010,8 @@ img.u-pull-left {
 
 @media screen and (max-width: 600px) {
     .s-works {
-        padding-top    : var(--vspace-3);
-        padding-bottom : var(--vspace-3);
+        /*padding-top    : var(--vspace-3);*/
+        /*padding-bottom : var(--vspace-3);*/
     }
 
     .folio-item__title {
