@@ -535,6 +535,8 @@ img,
 video {
     max-width : 100%;
     height    : auto;
+    margin: 0 auto;
+    display: block;
 }
 
 pre {
@@ -1782,6 +1784,7 @@ hr.fancy::before {
   margin-top: 0;
   max-height: 0;
   opacity: 0;
+  margin-bottom: 0;
 }
 .accordion li input[type=checkbox]:checked ~ i:before {
   transform: translate(2px, 0) rotate(45deg);
@@ -2499,15 +2502,23 @@ td:last-child {
     margin-bottom : var(--vspace-1);
     border-radius : var(--border-radius);
     font-family   : var(--font-1);
-    font-weight   : 500;
-    font-size     : var(--text-sm);
-    line-height   : var(--vspace-0_75);
+    font-weight   : 400;
+    font-size     : var(--base-font-size);
+    line-height   : var(--vspace-1);
     opacity       : 1;
     visibility    : visible;
     position      : relative;
 }
 .alert-box p {
+    margin-bottom: var(--vspace-0_25);
+}
+.alert-box h1, .alert-box h2, .alert-box h3, .alert-box h4, .alert-box h5, .alert-box h6 {
     margin-bottom: 0;
+}
+
+.alert-box .accordion li {
+    border-top: none;
+    padding-top: 0;
 }
 
 .alert-box__close {
@@ -3362,6 +3373,16 @@ img.u-pull-left {
     opacity        : .12;
 }
 
+.s-anomaly__cover {
+    aspect-ratio        : 1/1;
+    width               : 100%;
+    background-color    : var(--color-gray-4);
+    background-image    : url(../anomaly/anomaly-cover.jpg);
+    background-repeat   : no-repeat;
+    background-position : center;
+    background-size     : cover;
+    position            : relative;
+}
 
 .s-zest__cover {
     aspect-ratio        : 1/1;
@@ -3375,10 +3396,10 @@ img.u-pull-left {
 }
 
 .s-newrelic__cover {
-    aspect-ratio        : 1/1;
+    aspect-ratio        : 2/1;
     width               : 100%;
     background-color    : var(--color-gray-4);
-    background-image    : url(../newrelic/newrelic-cover-new.jpg);
+    background-image    : url(../newrelic/newrelic-cover-shorter-full.jpg);
     background-repeat   : no-repeat;
     background-position : center;
     background-size     : cover;

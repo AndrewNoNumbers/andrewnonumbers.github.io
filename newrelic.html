@@ -117,7 +117,7 @@
                     <h2>What is New Relic?</h2>
 
                     <p class="attention-getter">
-                        New Relic is the industry-leading all-in-one observability platform, designed to allow software developers to build more perfect software.
+                        New Relic is a full-stack monitoring platform, used by half of the Fortune 100. Software engineers use New Relic to troubleshoot software performance issues and outages.
                     </p>
                 </div> <!-- end column -->
 
@@ -128,45 +128,216 @@
 
             <div class="row">
                 <div class="column lg-12">
-                    <h2>Problem</h2>
-                    <p>The Docs site had a number of long-standing issues that made it hard for users to easily browse and understand what New Relic offers, and this was shown through low scores in a UX test. Despite the Docs site's prominent role as a driver of sign ups and feature adoption, the Docs team never had a long-term designer. I set forth to build a relationship with them and help them overhaul the navigation to resolve foundational issues while setting them on the path to iteration.
-                    <!--<p>As an area without a design system, the docs work required a lot of alignment with design leadership as well as novel interaction and visual design.</p>
-                    <p>There were two main problems I set out to solve 1) Docs writers rely on feedback to know where to dedicate more resources, but the Docs site was not getting much feedback 2) The Docs site scored low in 'Ease of use' and 'Ease of navigation'</p>-->
+                    <h2>Problem exploration and convergence</h2>
+                    <p>
+                        The kick off to any design project is to understand what problem I'm solving and why it matters. Sometimes, the problem surfaces organically through continuous discovery; other times, the problem is given to design because someone internally believes there's a problem.
+                    </p>
+                    <p>
+                        For this project, it was the latter: the Docs team brought up that they believed the Docs site navigation needed a redesign, and would appreciate design help. 
+                    </p>
+                    <p>
+                        It's not a bad place to be when stakeholders proactively invite design to redesign something. However, it was up to me as the designer assigned to figure out exactly what pain points users experience with the Docs site navigation, so that we could test and ensure that our redesigned navigation actually works better.
+                    </p>
+                    <p>
+                        I partnered with a UX researcher at New Relic to run and analyze a UX survey on the Docs site, and followed up with a series of observational interviews of actual New Relic users using the Docs site. What we found was that not only did 'Ease of use' and 'Ease of navigation' score uncommonly low on the survey, real users had a shared set of struggles with getting around Docs.
+                    </p>
+                    <h3>These were the struggles I observed</h3>
+                    <h4>Each section has its own navigation</h4>
+                    <p>Clicking on a top-level topic area of Docs leads the user to a new navigation. Users exhibited uncertainty about how the new navigation relates to the navigation that were looking at a second before, and most took a while to recall how to get back to the main navigation.</p>
+                    <video width="75%" height="80%" autoplay muted loop class="thumbnail">
+                        <source src="newrelic/old-docs-sections.mp4" type="video/mp4">
+                            Your browser does not support this video.
+                    </video>
+
+                    <h4>Back is broken</h4>
+                    <p>I found that back navigation is broken around 5% of the time. When the user clicks back in the browser, the page would try to go back but instantly go forward again.</p>
+                    <video width="75%" height="80%" autoplay muted loop class="thumbnail">
+                        <source src="newrelic/old-docs-back-broken.mp4" type="video/mp4">
+                            Your browser does not support this video.
+                    </video>
+
+                    <h4>Shortcut pages are jarring</h4>
+                    <p>
+                        Shortcut pages are pages that don't live where it looks like it lives. In this example, "APM best pracitces guide" is not an article that lives in the "Monitor your app's performance" section even though it appears like it, but rather it links to an article in the "Guides and solutions" section. Shortcut pages have unexpected behavior and confuse users by taking them somewhere they had no expectation of going to, and causing them to lose their place.
+                    </p>
+                    <video width="75%" height="80%" autoplay muted loop class="thumbnail">
+                        <source src="newrelic/old-docs-shortcut-pages.mp4" type="video/mp4">
+                            Your browser does not support this video.
+                    </video>
+                    
+
+                    <h4>Top-level categories are unclear</h4>
+                    <p>Top-level categories are not easily recognizable to users. The top-level navigation presented the vast set of New Relic's capabilities in an alphabetical list. I found that many users did not understand most of them, because they use only a small set of New Relic's capabilities, so they end up looking specifically for the thing they recognize.</p>
+                    <img src="newrelic/old-nav-categories.png" width="75%"/>
                 </div>
             </div>
 
             <div class="row">
                 <div class="column lg-12">
-                    <h2>Action</h2>
-                    <p>The first piece, getting more reader feedback for docs, had a very tight turnaround, and was a good opportunity for me to build trust with the team. By delivering a solution that was easily doable and took into account technical constraints, I was able to build a relationship with the Docs engineering team and Docs writers.</p>
+                    <h2>Solution exploration and convergence</h2>
                     <p>
-                        The second piece, bumping up 'Ease of use' and 'Ease of navigation', was a more involved project that involved synthesizing research data, aligning the team on the main challenges, and coming up with a holistic navigation redesign that solved the myriad of navigation flaws while aligning the new Docs design with our design system.
+                        With a stronger understanding of the problems plaguing the current navigation experience, I set forth to figure out how a navigation redesign could alleviate the issues.
+                    </p>
+
+                    <p>
+                        As with any product, but especially navigation, the ideal design would consider how these problems could be solved holistically, rather than piecemeal.
+                    </p>
+
+                    <div class="alert-box alert-box--notice">
+                        <ul class="accordion">
+                            <li>
+                                <input type="checkbox" checked>
+                                <i></i>
+                                <h5>See how I moved Docs to a design system</h5>
+                                <p>
+                                    Before getting to the UX of solutions, I found that the Docs site was in an unusual space of not having a design system or guidelines. This was the effect of having a decentralized design organization &mdash; the marketing team had a design system, and the product team had a design system. However, other teams like the Docs team which lived under neither organization fell through the cracks and did not have awareness or a working relationship with either design system.
+                                </p>
+                                <p>
+                                    Building without a design system means there's no documentation of design patterns and reuse, and creates risk of introducing inconsistencies and redundancies when future designers work in the same area. 
+                                </p>
+                                <p>
+                                    In order to prevent this and to set the Docs team up for stronger design consistency in the future, I evaluated both the brand design system and the product design system. I then set up meetings with the Head of Brand Design and the Design Systems Lead on the product side to build alignment on where I should guide the Docs site. 
+                                </p>
+                                <p>
+                                    The alignment we built was that the Docs site should follow the marketing design system, since that system is more fitting for a content-heavy site like Docs, and also because Docs should fit into the family of external-facing sites, so a consistent styling makes sense.
+                                </p>
+                                <p>
+                                    Because the Docs team was looking for a redesign of site navigation, this was the perfect opportunity to set the site up with an aligned design system.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    
+
+                    <h3>Addressing each issue</h3>
+                    <h4>A navigation system that doesn't require mental gymnastics</h4>
+                    <p>
+                        This was the crux of what many internally believed to be the cause of navigation issues. Clicking on any topic area from the main navigation would open up a different navigation that appears completely different from the main navigation.
+                    </p>
+                    <p>
+                        While engineering was exploring the feasibility of combining the disparate sections into a unified navigation, I took the time to mock up how we could resolve some confusion if a unified navigation doesn't work out. 
+                    </p>
+                    <img src="newrelic/annotated-single-nav.jpg" alt="">
+                    <figcaption>By introducing elements like a 'Back to home', breadcrumbs, and '24 articles in this section', we can subtly instill the sense that the user is within a topic area, and the main navigation is just one click back. This mockup also shows a visual design refresh based on guidelines of the marketing design system.</figcaption>
+                    <p>
+                        While the addition of the 'Back to home' and '24 articles in this section' would be low lift for engineering, the ability to have breadcrumbs runs into significant challenges.
+                    </p>
+                    <p>
+                        Luckily, the engineering team had found it quite feasible to build a unified navigation, and the team had a lot of momentum toward it, so that's what I explored next.
+                    </p>
+                    <img src="newrelic/annotated-unified-nav.jpg" alt="">
+                    <figcaption>This mockup with the unified navigation shows different topic areas having their navigations nested in a tree view.</figcaption>
+
+                    <p>
+                        A unified nav has many benefits, such as easier exploration into different directories. It also reduces the cognitive load when changing between different topic areas.
+                    </p>
+
+                    <p>
+                        However, there were also interaction design challenges, especially since New Relic had never built a tree-view navigation.
+                    </p>
+                    <p>
+                        Examples include:
                     </p>
                 </div>
             </div>
 
             <div class="row">
-                <div class="column lg-12">
-                    <h2>Result</h2>
-                    <p>Though there's always more to improve, this project exceeded the team's objectives. The redesigned feedback mechanism gathered much more reader feedback than the old one, allowing the Docs writer to be more agile in improving content, and also allowed the team to receive text suggestions. The navigation redesign resolved some longstanding complaints, set up the site for scale, and improved 'Ease of use' and 'Ease of navigation' scores the next time we ran the UX metrics survey.</p>
+                <div class="column lg-6">
+                    <h5>Ensuring the navigation supports the right level of depth</h5>
+                    <img src="newrelic/depth.png" alt="">
+                    <figcaption>I found that the Docs site had no more than 4 layers of directories, and this was a best practice that the Docs writers followed. This meant my design could be optimized for a maximum of 4 layers.</figcaption>
+                </div>
+                <div class="column lg-6">
+                    <h5>Ensuring the navigation supports extra long names</h5>
+                    <img src="newrelic/length.png" alt="">
+                    <figcaption>I found that occassionaly writers couldn't avoid a long name. I made sure the mockup had an overflow design to support long article and directory names even at the deepest layer.</figcaption>
                 </div>
             </div>
 
-        </section>
+            <div class="row">
+                <div class="column lg-12">
 
-        <section id="about" class="s-about">
+                    <h4>Back no longer breaks</h4>
+
+                    <p>
+                        <svg width="96" height="96" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.4" d="M7.12988 18.3101H15.1299C17.8899 18.3101 20.1299 16.0701 20.1299 13.3101C20.1299 10.5501 17.8899 8.31006 15.1299 8.31006H4.12988" stroke="#1C8A70" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M6.43012 10.8099L3.87012 8.24994L6.43012 5.68994" stroke="#1C8A70" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </p>
+
+                    <p>
+                        Back being broken turned out to not be a Docs-specific issue, but rather a newrelic.com-wide analytics script that broke the ability for users to go back 5% of the time. When the users presses back in the browser or swipes back on a Mac or mobile device, the site would reload the current page. 
+                    </p>
+                    <p>
+                        It was uncommon enough that no other internal stakeholder had noticed it or brought it up, but was affecting all of our sites including newrelic.com, our forums, our docs site, and other sites.
+                    </p>
+                    <p>
+                        I take credit only for surfacing the issue and funneling it to the right team that could figure out what was wrong and fix the loading of the script across all the sites. The responsible engineering team was the true hero in resolving the issue.
+                    </p>
+
+                    <h4>Shortcut pages get an icon</h4>
+                    <p>
+                        In the old navigation, not only was there no indicator that a shortcut page was any different than other pages, it would take users to a totally different navigation that they had no expectation of going to.
+                    </p>
+                    <p>
+                        <img src="newrelic/new-shortcut.png" style="width: 80%; display: block; margin: 0 auto;" alt="">
+                        <figcaption>New navigation adds a shortcut icon to shortcut pages</figcaption>
+                    </p>
+                    <p>
+                        With the redesigned unified navigation, shortcut pages have a shortcut icon, and users are scrolled to the part of the navigation the shortcut page points to.
+                    </p>
+
+                    <h4>Top-level categories are grouped semantically</h4>
+                    <p>
+                        <img src="newrelic/nav-categories.png" style="width: 30%; display: block; margin: 0 auto;" alt="">
+                        <figcaption>The new navigation groups topic areas related to each ohter, and adds headings</figcaption>
+                    </p>
+                    <p>
+                        I accomplished this by leading the Docs writing team in an affinity mapping exercise, where each writer was able to do their own grouping, and then we came together to see how each person's groupings compared to others' groupings. This led to a natural alignment on how different Docs topic areas relate to each other, and how they should be labelled.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="column lg-12">
+                    <h2>Getting the solution shovel-ready</h2>
+                    <p>Shovel-ready is a term one of my design colleagues uses to communicate that a design project is ready for engineers to start building. Even after the UX changes had been tested and gained stakeholder approval, there were some final details to figure out.</p>
+                </div>
+            </div>
+
             <div class="row">
                 <div class="column lg-6">
-                    <img src="newrelic/annotated-single-nav.jpg" alt="">
-                    <figcaption>An initial design exploration for applying a new design system</figcaption>
+                    <h5>Responsive</h5>
+                    <p>
+                        <img src="newrelic/responsive-docs.jpg" alt="">
+                        <figcaption>Our readership was approximately 92% desktop, 3% tablet, and 5% mobile, so even though desktop was our primary design target, I wanted to make sure the navigation works well for people with wider or narrower screens.</figcaption>
+                    </p>
                 </div>
                 <div class="column lg-6">
-                    <img src="newrelic/annotated-unified-nav.jpg" alt="">
-                    <figcaption>A second iteration that took advantage of new capability for a unified nav</figcaption>
+                    <h5>Dark mode</h5>
+                    <p>
+                        <img src="newrelic/dark-mode.jpg" alt="">
+                        <figcaption>The Docs site already supported dark mode, so it was important for the new nav to work well in both light and dark modes.</figcaption>
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="column lg-12">
+                    <h2>QA, communication, and monitoring</h2>
+                    <p>A project isn't done just because it's shovel-ready and engineers are working on it. As things are built, engineering will often have questions about details, and sometimes project owners need to make hard decisions in cutting some scope, in which case the designer's input is important to make sure the built experience is still holistically useful.</p>
+                    <p>In this case, because all the changes were front-end, the engineering team was able to fit them all into one sprint, and no scope needed to be cut.</p>
+                    <p>Having tested the individual changes to the navigation, we had high confidence that it would solve users' frustration with navigating Docs. However, as a final check, I ran a round of holistic usability testing comparing the newly-built Docs navigation with the existing Docs navigation.</p>
+
                 </div>
             </div>
 
         </section>
+
 
 
         <!-- # works
