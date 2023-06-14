@@ -208,7 +208,7 @@
 
         const blocks = document.querySelectorAll('[data-animate-block]');
 
-        window.addEventListener('DOMContentLoaded', animateOnScroll);
+        window.addEventListener('scroll', animateOnScroll);
 
         function animateOnScroll() {
 
@@ -376,7 +376,6 @@
         ssBackToTop();
         ssMoveTo();
 
-        animateChildrenOnLoad('#folio');
     })();
 
 })(document.documentElement);
