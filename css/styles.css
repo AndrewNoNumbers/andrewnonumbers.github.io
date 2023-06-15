@@ -172,7 +172,7 @@
     /* preloader
      */
     --color-preloader-bg           : var(--color-body);
-    --color-loader                 : var(--color-text-dark);
+    --color-loader                 : var(--color-1-dark);
     --color-loader-light           : var(--color-1-lighter);
 
     /* others
