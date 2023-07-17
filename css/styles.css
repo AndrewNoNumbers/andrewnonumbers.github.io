@@ -56,6 +56,8 @@
  * # WORKS
  *      ## portfolio list
  *      ## testimonial slider
+ * # PRESENT-MODE
+ *      ## slide
  * # FOOTER
  *      ## copyright
  *      ## go top
@@ -488,7 +490,6 @@ template {
 [hidden] {
     display : none;
 }
-
 
 
 /* ===================================================================
@@ -4042,6 +4043,19 @@ img.u-pull-left {
 .swiper-button-disabled svg path {
     fill : var(--color-gray-8);
 }
+
+
+
+
+/* ------------------------------------------------------------------- 
+ * ## present-mode
+ * ------------------------------------------------------------------- */
+
+.slide {
+    padding-top: 6rem;
+    margin-bottom: 20rem;
+}
+
 
 /* ------------------------------------------------------------------- 
  * responsive:
